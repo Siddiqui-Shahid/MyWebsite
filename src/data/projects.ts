@@ -37,7 +37,7 @@ export const projects: Project[] = [
     impact:
       'Shipped marketplace and booking experiences with reliability during high-traffic releases.',
     linkLabel: 'App Store',
-    href: 'https://apps.apple.com/in/app/district-dining-movies-events/id6448696699',
+    href: 'https://apps.apple.com/in/app/district-movies-events-dining/id6670536058',
   },
   {
     title: 'Memphis Grizzlies iOS App',
