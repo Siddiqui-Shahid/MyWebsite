@@ -2,11 +2,13 @@ import { Button } from '../components/ui/Button'
 import { Container } from '../components/ui/Container'
 import { Section } from '../components/ui/Section'
 import { site } from '../data/site'
+import { resumeHref } from '../lib/publicUrl'
 
 import profilePhoto from '../assets/profile.png'
 
 export function Hero() {
   const { hero } = site
+  const resumeLink = resumeHref(site.resume.href)
 
   return (
     <Section id="top" className="relative scroll-mt-0 overflow-hidden pb-20 pt-14 md:pb-28 md:pt-20">
@@ -92,6 +94,14 @@ export function Hero() {
             </Button>
             <Button href="#contact" variant="secondary">
               Contact Me
+            </Button>
+            <Button
+              href={resumeLink}
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {site.resume.label}
             </Button>
           </div>
         </div>

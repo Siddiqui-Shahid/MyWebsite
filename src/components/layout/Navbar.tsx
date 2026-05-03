@@ -2,6 +2,8 @@ import { Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 import { cn } from '../../lib/cn'
+import { resumeHref } from '../../lib/publicUrl'
+import { site } from '../../data/site'
 import { Container } from '../ui/Container'
 
 const navLinks = [
@@ -11,6 +13,8 @@ const navLinks = [
   { href: '#experience', label: 'Experience' },
   { href: '#contact', label: 'Contact' },
 ] as const
+
+const resumeLink = resumeHref(site.resume.href)
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
@@ -46,6 +50,16 @@ export function Navbar() {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href={resumeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                {site.resume.label}
+              </a>
+            </li>
           </ul>
         </nav>
 
@@ -79,6 +93,15 @@ export function Navbar() {
               {label}
             </a>
           ))}
+          <a
+            href={resumeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg px-3 py-3 text-base font-medium text-text-primary hover:bg-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            onClick={() => setOpen(false)}
+          >
+            {site.resume.label}
+          </a>
         </Container>
       </div>
     </header>

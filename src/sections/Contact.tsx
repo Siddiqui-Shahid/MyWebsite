@@ -2,11 +2,13 @@ import { Button } from '../components/ui/Button'
 import { Container } from '../components/ui/Container'
 import { Section } from '../components/ui/Section'
 import { site } from '../data/site'
+import { resumeHref } from '../lib/publicUrl'
 
 const headingId = 'contact-heading'
 
 export function Contact() {
   const mailto = `mailto:${site.email}`
+  const resumeLink = resumeHref(site.resume.href)
 
   return (
     <Section id="contact" labelledBy={headingId} className="bg-muted/40 pb-24">
@@ -28,9 +30,17 @@ export function Contact() {
             {site.email}
           </a>
         </p>
-        <div className="mt-8">
+        <div className="mt-8 flex flex-wrap items-center gap-4">
           <Button href={mailto} variant="primary">
             Email me
+          </Button>
+          <Button
+            href={resumeLink}
+            variant="secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {site.resume.label}
           </Button>
         </div>
       </Container>

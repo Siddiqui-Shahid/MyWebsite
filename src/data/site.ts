@@ -35,4 +35,9 @@ export const site = {
     heading:
       'Have an idea or opportunity? Reach out — I typically reply within a few snack breaks😁',
   },
+  /** Full URL (https://…) or a PDF under `public/`, e.g. `resume.pdf` */
+  resume: {
+    href: 'https://drive.google.com/file/d/1ymzjpyzXxuXFYOSftRGA9K-r0Muou4He/view',
+    label: 'Resume',
+  },
 } as const
