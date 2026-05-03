@@ -33,6 +33,6 @@ export const site = {
   },
   contact: {
     heading:
-      'Have an idea or opportunity? Reach out — I typically reply within a few business days.',
+      'Have an idea or opportunity? Reach out — I typically reply within a few snack breaks😁',
   },
 } as const
