@@ -1,6 +1,6 @@
 import { Container } from '../components/ui/Container'
 import { Section } from '../components/ui/Section'
-import { aiDevelopmentIntro, skillCategories } from '../data/skills'
+import { aiDevelopmentIntro, atsKeywords, skillCategories } from '../data/skills'
 
 const sectionId = 'skills'
 const headingId = 'skills-heading'
@@ -16,8 +16,8 @@ export function TechnicalSkills() {
           Technical skills
         </h2>
         <p className="mt-3 max-w-2xl text-lg text-text-secondary">
-          Languages, frameworks, and the AI-assisted toolchain I use to ship and
-          maintain production apps.
+          iOS, Flutter, on-device AI, and the toolchain I use to ship production
+          apps and privacy-first products.
         </p>
 
         <div className="mt-8 rounded-2xl border border-border bg-background/80 p-6 shadow-sm md:p-8">
@@ -29,7 +29,7 @@ export function TechnicalSkills() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-10 md:grid-cols-3">
+        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {skillCategories.map((category) => (
             <div key={category.title}>
               <h3 className="text-sm font-semibold uppercase tracking-wider text-text-secondary">
@@ -46,6 +46,21 @@ export function TechnicalSkills() {
               </ul>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12">
+          <h3 className="text-sm font-semibold uppercase tracking-wider text-text-secondary">
+            Core keywords
+          </h3>
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {atsKeywords.map((keyword) => (
+              <li key={keyword}>
+                <span className="inline-block rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-sm font-medium text-text-primary">
+                  {keyword}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </Container>
     </Section>

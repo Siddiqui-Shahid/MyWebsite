@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Muhammed Shahid Siddiqui
+%------------------------
+
+\documentclass[letterpaper,10.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+
+\addtolength{\oddsidemargin}{-0.60in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1.20in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.55in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1}%
+}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{5pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}%
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \vspace{3pt}\item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}%
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{%
+  \begin{itemize}[leftmargin=0.0in, label={}, topsep=0pt, itemsep=0pt]%
+}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}[topsep=2pt, itemsep=0pt, parsep=0pt, leftmargin=*]%
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape MUHAMMED SHAHID SIDDIQUI} \\[5pt]
+    \small
+    \href{mailto:teamworkwithshahid@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ teamworkwithshahid@gmail.com}
+    \;|\;
+    \href{tel:+919930436814}{\raisebox{-0.2\height}\faPhone\ +91 99304 36814}
+    \;|\;
+    \href{https://www.linkedin.com/in/shahid-siddiqui-25931b197/}{\raisebox{-0.2\height}\faLinkedin\ LinkedIn}
+    \;|\;
+    \href{https://siddiqui-shahid.github.io/MyWebsite/}{\raisebox{-0.2\height}\faGlobe\ Portfolio}
+    \;|\;
+    \href{https://www.google.com/maps/place/Mumbai,+Maharashtra}{\raisebox{-0.2\height}\faMapMarker\ Mumbai, Maharashtra}
+    \\[1pt]
+    \small
+    Education: Mumbai University \textemdash{} May 2023 \textemdash{} B.E.\ (Computer Engineering) \textemdash{} \textbf{CGPA: 8.96}
+\end{center}
+
+\vspace{-2pt}
+
+\noindent\small{iOS \& AI-Native Software Engineer with \textbf{3.5+ years} building consumer apps at \textbf{30+ lakh DAU} scale and shipping solo full-stack products with \textbf{on-device AI}. Expert in \textbf{Swift, SwiftUI, UIKit, Flutter, Dart}, \textbf{Clean Architecture, MVVM, POP}, and \textbf{privacy-first on-device ML} (Core ML, \textbf{TensorFlow Lite}, \textbf{RAG}, \textbf{Apple Intelligence}, \textbf{Gemini Nano}). Proven in \textbf{offline-first} mobile, \textbf{mobile SDK} design, \textbf{REST APIs}, and \textbf{Context Engineering} for AI-assisted delivery.}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {District By Zomato \href{https://www.district.in/}{\faExternalLink*}}{Jan 2026 -- April 2026}
+  {\underline{Software Development Engineer (iOS) -- 1}}{Gurugram}
+  \resumeItemListStart
+    \resumeItem{Delivered \textbf{Free Parking} billing flow, \textbf{biometric (Face ID)} ticket access via LocalAuthentication, and on-call production fixes.}
+    \resumeItem{Applied \textbf{Context Engineering} with Cursor and Claude for MVVM/Clean Architecture migrations and AI-assisted reviews.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {BookMyShow \href{https://in.bookmyshow.com/}{\faExternalLink*}}{Oct 2024 -- Jan 2026}
+  {\underline{Software Development Engineer (iOS) -- 1}}{Mumbai}
+  \resumeItemListStart
+    \resumeItem{Maintained \textbf{30+ lakh DAU} app at \textbf{99.95\%+ crash-free sessions}; IMOC for P0/P1 incidents during peak events.}
+    \resumeItem{Owned highest-revenue \textbf{Ads Module}: HeroWidget pause/play lifecycle, \textbf{POP + Generics} pipeline; migrated Alamofire to \textbf{URLSession} with \textbf{SSL pinning}.}
+    \resumeItem{Shipped \textbf{LE Bottom Sheet} and backend-driven header/search; \textbf{Firebase Performance} traces at p50/p90 across core journeys.}
+    \resumeItem{Eliminated concurrent-access crashes with GCD synchronised dictionaries and read-write lock patterns.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Raw Engineering \href{https://www.raweng.com/}{\faExternalLink*}}{Jan 2023 -- Oct 2024}
+  {\underline{Associate Software Engineer (iOS)}}{Mumbai}
+  \resumeItemListStart
+    \resumeItem{Built NBA/WNBA apps (\textbf{Memphis Grizzlies, Miami Heat, Las Vegas Aces, Chicago Sky}); shipped reusable \textbf{Stories SDK} adopted portfolio-wide.}
+    \resumeItem{\textbf{SwiftUI+UIKit} interoperability, deep links, Mixpanel/Airship; led \textbf{Xcode 15} migration with zero-regression QA checklist.}
+    \resumeItem{Evaluated \textbf{Flutter} for cross-platform delivery; \textbf{MVVM}, GCD, Combine, and Instruments-driven performance tuning.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Personal Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\href{https://github.com/Siddiqui-Shahid/SpendingTracker}{\textbf{FinTrack}} \faExternalLink* \;|\; \textit{Flutter, Dart, Hive, On-device AI, RAG, BM25}}{Privacy-first expense tracker}
+    \resumeItemListStart
+      \resumeItem{Shipped \textbf{offline-first} Android/iOS app: Hive storage, biometric lock, insights charts, AdMob + Firebase Crashlytics/Remote Config.}
+      \resumeItem{Built \textbf{AI Savings Coach}: \textbf{BM25 RAG} on local ledger + \textbf{Apple Intelligence / Gemini Nano} via custom \textbf{flutter\_native\_ai} plugin; \textbf{RuleBasedCoach} fallback --- no cloud LLM for spend data.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\href{https://github.com/Siddiqui-Shahid/gymautomation}{\textbf{GymFlow}} \faExternalLink* \;|\; \textit{NestJS, Prisma, Next.js, Flutter, TFLite}}{Full-stack gym ops (India-first)}
+    \resumeItemListStart
+      \resumeItem{Designed multi-role product (Owner/Staff/Trainer/Member): one \textbf{NestJS/Prisma API}, Next.js portal, Flutter app with geofenced QR + \textbf{HMAC TOTP} check-in.}
+      \resumeItem{Integrated on-device \textbf{MiniLM (TFLite)} embeddings + WordPiece tokenizer for workout recommendations; trainer plan as \textbf{RAG} context with \textbf{TF-IDF} fail-soft fallback.}
+      \resumeItem{India GTM: INR/UPI receipts, \textbf{wa.me} lead follow-ups; migrated Firebase BaaS to owned API for pilot deploy control.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.17in, label={}, topsep=3pt, itemsep=3pt]
+  \small{\item{
+    \textbf{Languages:} Swift, Dart, TypeScript, Python \\[2pt]
+    \textbf{Mobile:} SwiftUI, UIKit, Flutter, Clean Architecture, MVVM, POP, Offline-first, Mobile SDK Development, Deep Links, LocalAuthentication \\[2pt]
+    \textbf{On-Device AI:} Core ML, TensorFlow Lite, RAG, BM25, Apple Intelligence, Gemini Nano, Privacy Engineering, Semantic Retrieval \\[2pt]
+    \textbf{Backend \& Web:} NestJS, Prisma, Next.js, REST APIs, JWT, Firebase (Crashlytics, Performance, Remote Config) \\[2pt]
+    \textbf{Security \& Ops:} SSL Pinning, Biometric Auth, GCD/async-await/Combine, Context Engineering, Xcode Instruments \\[2pt]
+    \textbf{ATS Keywords:} Swift, SwiftUI, UIKit, Flutter, Dart, On-device AI, Core ML, TensorFlow Lite, RAG, Apple Intelligence, Gemini Nano, MVVM, Clean Architecture, Firebase, Privacy Engineering, Mobile SDK Development, REST APIs, Context Engineering, Offline-first, Protocol-Oriented Programming
+  }}
+\end{itemize}
+
+\end{document}
