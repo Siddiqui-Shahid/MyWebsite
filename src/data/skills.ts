@@ -6,38 +6,78 @@ export type SkillCategory = {
 }
 
 export const aiDevelopmentIntro =
-  'AI-driven development: Cursor, Claude, Gemini, and GitHub Copilot speed up implementation and reviews; architecture, security, and production judgment stay human-led — secure AI-assisted coding with reviewable diffs.'
+  'On-device AI & AI-assisted delivery: I ship privacy-first RAG, TFLite, and OS-native models (Apple Intelligence, Gemini Nano) in product — and use Context Engineering with Cursor, Claude, and Copilot to accelerate full-stack delivery while owning architecture, security, and production judgment.'
+
+/** Top ATS keywords for iOS + AI-native + Flutter roles */
+export const atsKeywords = [
+  'Swift',
+  'SwiftUI',
+  'UIKit',
+  'Flutter',
+  'Dart',
+  'On-device AI',
+  'Core ML',
+  'TensorFlow Lite',
+  'RAG',
+  'Apple Intelligence',
+  'Gemini Nano',
+  'MVVM',
+  'Clean Architecture',
+  'Firebase',
+  'Privacy Engineering',
+  'Mobile SDK Development',
+  'REST APIs',
+  'Context Engineering',
+  'Offline-first',
+  'Protocol-Oriented Programming',
+] as const
 
 export const skillCategories: SkillCategory[] = [
   {
     title: 'Programming languages',
-    items: ['Swift', 'Dart', 'Python'],
+    items: ['Swift', 'Dart', 'TypeScript', 'Python'],
   },
   {
-    title: 'Libraries & frameworks',
+    title: 'Mobile & architecture',
     items: [
       'SwiftUI',
       'UIKit',
-      'Deep links',
-      'Mixpanel Analytics',
-      'iOS development',
-      'REST API integration',
       'Flutter',
-      'Firebase',
+      'Clean Architecture',
       'MVVM',
-      'CMS & content management',
-      'UI SDKs',
-      'Secure AI-assisted coding',
+      'Protocol-Oriented Programming',
+      'Offline-first',
+      'Mobile SDK Development',
+      'Deep links',
+      'REST APIs',
+      'Firebase',
+      'CMS-driven UI',
+    ],
+  },
+  {
+    title: 'On-device AI & privacy',
+    items: [
+      'RAG',
+      'BM25',
+      'TensorFlow Lite',
+      'Core ML',
+      'Apple Intelligence',
+      'Gemini Nano',
+      'Semantic retrieval',
+      'Privacy Engineering',
+      'Flutter plugins (Pigeon)',
     ],
   },
   {
     title: 'Tools & platforms',
     items: [
       'Xcode',
+      'Android Studio',
+      'NestJS',
+      'Prisma',
+      'Next.js',
       'Git',
       'GitHub',
-      'VS Code',
-      'Android Studio',
       'Cursor',
       'Claude',
       'Gemini',

@@ -3,37 +3,42 @@ export const site = {
   name: 'Shahid',
   email: 'teamworkwithshahid@gmail.com',
   hero: {
-    headline: 'I build scalable iOS and Flutter apps for production teams',
+    headline:
+      'iOS & AI-native engineer — production apps and on-device intelligence',
     subheadline:
-      'Shipping at District by Zomato, BookMyShow, and Raw Engineering (NBA & WNBA team apps). Swift, Dart, Python, SwiftUI, UIKit, Flutter, Firebase, MVVM, REST, analytics, CMS-driven UI — with AI-assisted, review-ready workflows.',
-    photoAlt: 'Portrait of Shahid, iOS and Flutter engineer',
+      '3.5+ years shipping at BookMyShow (30+ lakh DAU), District by Zomato, and NBA team apps — plus solo-built FinTrack and GymFlow with on-device RAG, TFLite, and privacy-first architecture. Swift, Flutter, Clean Architecture, and AI-assisted delivery.',
+    photoAlt: 'Portrait of Shahid, iOS and AI-native mobile engineer',
     /** Short labels for the hero visual — stacked cards */
-    stackCards: ['iOS & SwiftUI', 'Flutter & Dart', 'AI-assisted delivery'] as const,
+    stackCards: [
+      'iOS & SwiftUI',
+      'Flutter & On-device AI',
+      'RAG · TFLite · Privacy',
+    ] as const,
     /** One-line proof points under the subhead */
     stats: [
-      'Production releases & scale',
-      'iOS, Flutter & Firebase',
-      'Integration & on-call ownership',
+      '30+ lakh DAU production scale',
+      'On-device AI — no cloud LLM for user data',
+      'Solo full-stack product shipping',
     ] as const,
     /** Companies / products — trust chips (subset of full TrustBar) */
     trustChips: [
-      'District by Zomato',
       'BookMyShow',
-      'Raw Engineering',
-      'NBA / WNBA apps',
+      'District by Zomato',
+      'FinTrack',
+      'GymFlow',
     ] as const,
   },
   about:
-    'I am an iOS engineer focused on production releases, modular architecture, and measurable performance. At District by Zomato I ship native marketplace flows and reliability on-call. At BookMyShow I owned revenue-critical surfaces and networking modernization. At Raw Engineering I shipped end-to-end features across multiple NBA team apps (integrations, analytics, notifications, and cross-team collaboration). Day to day I use Xcode, Git, GitHub, VS Code, Android Studio, Firebase, Mixpanel, deep links, REST APIs, CMS-backed content, and AI-driven development with Cursor, Claude, Gemini, and GitHub Copilot — always with reviewable, secure workflows.',
+    'I am an iOS and AI-native software engineer who ships production mobile at scale and builds privacy-first products end-to-end. At BookMyShow I owned revenue-critical surfaces for 30+ lakh daily users; at District by Zomato I delivered native flows with biometric security and AI-assisted architecture migrations. Solo, I built FinTrack — a Flutter expense app with BM25 RAG and Apple Intelligence / Gemini Nano coaching that never sends spending data to the cloud — and GymFlow, a full-stack gym ops platform with geofenced QR check-in and on-device MiniLM workout recommendations. I combine Swift, Flutter, Clean Architecture, and Context Engineering to move fast without compromising trust boundaries.',
   nextProject: {
-    title: 'Ready to build your next app',
+    title: 'Building something with mobile or on-device AI?',
     subtext:
-      'From arena apps to consumer marketplaces — scalable architecture, clear ownership, and shipped releases.',
-    cta: 'Start a Project',
+      'From consumer scale to privacy-first Flutter products — architecture, ownership, and shipped releases.',
+    cta: 'Get in Touch',
   },
   contact: {
     heading:
-      'Have an idea or opportunity? Reach out — I typically reply within a few snack breaks😁',
+      'Have an idea, role, or project? Reach out — I typically reply within a few snack breaks 😁',
   },
   /** Full URL (https://…) or a PDF under `public/`, e.g. `resume.pdf` */
   resume: {

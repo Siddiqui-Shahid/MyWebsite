@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react'
-import { Gauge, Layers, Rocket, Smartphone, Sparkles } from 'lucide-react'
+import { Brain, Gauge, Layers, Rocket, Smartphone, Sparkles } from 'lucide-react'
 
 export type Service = {
   title: string
@@ -11,31 +11,37 @@ export const services: Service[] = [
   {
     title: 'iOS Development',
     description:
-      'Production-ready SwiftUI and UIKit apps with solid architecture and App Store polish.',
+      'Production SwiftUI and UIKit at scale — MVVM, Clean Architecture, SSL pinning, and 30+ lakh DAU reliability.',
     Icon: Smartphone,
   },
   {
     title: 'Flutter Development',
     description:
-      'Cross-platform experiences with consistent UX and maintainable Dart codebases.',
+      'Cross-platform apps with offline-first storage, biometric security, and store-ready polish.',
     Icon: Layers,
   },
   {
-    title: 'MVP Development',
+    title: 'On-Device AI',
     description:
-      'From idea to TestFlight: scope tightly, ship fast, and learn from real users.',
+      'Privacy-first RAG, TFLite embeddings, Apple Intelligence, and Gemini Nano — with graceful fallbacks when models are unavailable.',
+    Icon: Brain,
+  },
+  {
+    title: 'Full-Stack Product Shipping',
+    description:
+      'Solo end-to-end delivery: mobile + API + portal — from FinTrack to GymFlow with deliberate product scope.',
     Icon: Rocket,
   },
   {
-    title: 'Performance Optimization',
+    title: 'Performance & Security',
     description:
-      'Networking, startup time, memory, and binary size tuned for real-world traffic.',
+      'Firebase traces, crash triage, networking modernization, and biometric auth for production trust.',
     Icon: Gauge,
   },
   {
-    title: 'AI-Driven Development',
+    title: 'AI-Assisted Development',
     description:
-      'Secure AI-assisted coding with Cursor, Claude, Gemini, and Copilot — faster iteration and reviews without sacrificing architecture or production bar.',
+      'Context Engineering with Cursor, Claude, and Copilot — faster iteration without sacrificing architecture or security.',
     Icon: Sparkles,
   },
 ]

@@ -11,6 +11,51 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'FinTrack',
+    tech: [
+      'Flutter',
+      'Dart',
+      'Hive',
+      'On-device AI',
+      'RAG',
+      'BM25',
+      'Apple Intelligence',
+      'Gemini Nano',
+    ],
+    bullets: [
+      'Privacy-first expense tracker: offline Hive storage, biometric lock, insights charts, JSON backup, AdMob monetization.',
+      'AI Savings Coach: BM25 RAG over local spending data + on-device generation via custom flutter_native_ai plugin (Apple FM / Gemini Nano).',
+      'RuleBasedCoach fallback when OS models unavailable — spending data never leaves the device.',
+      'Production ops: Firebase Crashlytics, Remote Config for updates/ads, Material You design system.',
+    ],
+    impact:
+      'Shipped a store-ready privacy product with real on-device AI — not a cloud chatbot bolt-on.',
+    linkLabel: 'GitHub',
+    href: 'https://github.com/Siddiqui-Shahid/SpendingTracker',
+  },
+  {
+    title: 'GymFlow',
+    tech: [
+      'NestJS',
+      'Prisma',
+      'Next.js',
+      'Flutter',
+      'TFLite',
+      'RAG',
+      'JWT',
+    ],
+    bullets: [
+      'Full-stack gym ops for Indian gyms: one API, Next.js staff portal, Flutter member/trainer app.',
+      'Secure attendance: QR geofence, membership gate, rotating HMAC-SHA1 TOTP desk bypass (30s).',
+      'On-device MiniLM (TFLite) embeddings + WordPiece tokenizer for workout recommendations; trainer plan as RAG context; TF-IDF fail-soft fallback.',
+      'India-first ops: INR/UPI receipts, wa.me lead follow-ups; migrated Firebase BaaS to owned NestJS/Prisma stack.',
+    ],
+    impact:
+      'Pilot-ready B2B product with deliberate scope cuts and on-device AI — zero cloud inference cost.',
+    linkLabel: 'GitHub',
+    href: 'https://github.com/Siddiqui-Shahid/gymautomation',
+  },
+  {
     title: 'BookMyShow',
     tech: ['Swift', 'SwiftUI', 'UIKit', 'MVVM', 'Backend-driven UI'],
     bullets: [
@@ -26,13 +71,12 @@ export const projects: Project[] = [
   },
   {
     title: 'District by Zomato',
-    tech: ['Swift', 'SwiftUI', 'iOS'],
+    tech: ['Swift', 'SwiftUI', 'iOS', 'LocalAuthentication'],
     bullets: [
+      'Free Parking billing flow and biometric (Face ID) ticket access via LocalAuthentication.',
       'Hotlist: Updated flows so users can discover restaurants using Instagram Reels and AI-powered search.',
-      'Impression actions: When a widget is on-screen with sufficient visibility, configured actions run automatically.',
-      'Plays: Court and venue booking for badminton, cricket, football, and other sports — including cancellation and rescheduling.',
-      'Resolved multiple production bugs; on-call during critical releases and major initiatives.',
-      'Integrated AI-assisted tooling in the workflow for faster delivery, reviews, and safer architectural changes.',
+      'Plays: Court and venue booking for badminton, cricket, football, and other sports.',
+      'Context Engineering with Cursor and Claude for MVVM/Clean Architecture migrations and AI-assisted reviews.',
     ],
     impact:
       'Shipped marketplace and booking experiences with reliability during high-traffic releases.',
