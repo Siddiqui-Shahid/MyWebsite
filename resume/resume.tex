@@ -1,9 +1,9 @@
 %-------------------------
-% Resume in LaTeX
+% Resume in Latex
 % Author : Muhammed Shahid Siddiqui
 %------------------------
 
-\documentclass[letterpaper,10.8pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -16,8 +16,12 @@
 \usepackage[english]{babel}
 \usepackage{fontawesome5}
 \usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{iftex}
 \setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
 
 \definecolor{cvblue}{HTML}{0E5484}
 \definecolor{darkcolor}{HTML}{0F4539}
@@ -25,139 +29,184 @@
 \definecolor{LightGrey}{HTML}{666666}
 
 \addtolength{\oddsidemargin}{-0.60in}
-\addtolength{\evensidemargin}{-0.50in}
-\addtolength{\textwidth}{1.20in}
-\addtolength{\topmargin}{-.75in}
-\addtolength{\textheight}{1.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.25in}
+\addtolength{\topmargin}{-0.82in}
+\addtolength{\textheight}{1.62in}
 
 \urlstyle{same}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\setstretch{1.02}
 
 \titleformat{\section}{
-  \vspace{2pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+  \vspace{1pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-\pdfgentounicode=1
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
 
 \newcommand{\resumeItem}[1]{%
-  \item\small{#1}%
+  \item{#1}%
 }
 
 \newcommand{\resumeSubheading}[4]{%
-  \vspace{5pt}\item
+  \vspace{3pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{\large#1} & \textbf{\small #2} \\
-      \textit{\large#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-6pt}%
+      \textbf{\large#1} & \textbf{#2} \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{2.5pt}%
 }
 
-\newcommand{\resumeProjectHeading}[2]{%
-  \vspace{3pt}\item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-6pt}%
+\newcommand{\resumeProjectHeading}[3]{%
+  \vspace{2pt}\item
+    \begin{tabular*}{1.001\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#3}\\
+    \end{tabular*}\vspace{-1pt}
+    {\textit{#2}}\vspace{1pt}%
 }
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{%
-  \begin{itemize}[leftmargin=0.0in, label={}, topsep=0pt, itemsep=0pt]%
+  \begin{itemize}[leftmargin=0.0in, label={}, topsep=0pt, itemsep=0pt, parsep=0pt]%
 }
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 \newcommand{\resumeItemListStart}{%
-  \begin{itemize}[topsep=2pt, itemsep=0pt, parsep=0pt, leftmargin=*]%
+  \begin{itemize}[topsep=0.5pt, itemsep=1pt, parsep=0pt, leftmargin=*]%
 }
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{1pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
 
 \begin{document}
 
 \begin{center}
-    {\Huge \scshape MUHAMMED SHAHID SIDDIQUI} \\[5pt]
-    \small
+    {\Huge \scshape MUHAMMED SHAHID SIDDIQUI} \\[4pt]
+    \normalsize
     \href{mailto:teamworkwithshahid@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ teamworkwithshahid@gmail.com}
     \;|\;
     \href{tel:+919930436814}{\raisebox{-0.2\height}\faPhone\ +91 99304 36814}
     \;|\;
     \href{https://www.linkedin.com/in/shahid-siddiqui-25931b197/}{\raisebox{-0.2\height}\faLinkedin\ LinkedIn}
     \;|\;
-    \href{https://siddiqui-shahid.github.io/MyWebsite/}{\raisebox{-0.2\height}\faGlobe\ Portfolio}
+    \href{https://github.com/Siddiqui-Shahid}{\raisebox{-0.2\height}\faGithub\ GitHub}
     \;|\;
-    \href{https://www.google.com/maps/place/Mumbai,+Maharashtra}{\raisebox{-0.2\height}\faMapMarker\ Mumbai, Maharashtra}
-    \\[1pt]
-    \small
+    \href{https://siddiqui-shahid.github.io/MyWebsite/}{\raisebox{-0.2\height}\faGlobe\ Portfolio}
+    \\[2pt]
     Education: Mumbai University \textemdash{} May 2023 \textemdash{} B.E.\ (Computer Engineering) \textemdash{} \textbf{CGPA: 8.96}
 \end{center}
 
-\vspace{-2pt}
+\vspace{3pt}
+\noindent\textbf{iOS \& AI-Native Software Engineer} with \textbf{3.5+ years} shipping consumer apps at \textbf{30+ lakh DAU}.\\
+Expert in \textbf{MVVM, Clean Architecture, Protocol-Oriented Programming (POP)}, and Generics.\\
+Skilled in \textbf{on-device AI}, \textbf{SDUI}, \textbf{Context Engineering} (Cursor, Claude, Copilot), concurrency, and \textbf{Flutter}.
 
-\noindent\small{iOS \& AI-Native Software Engineer with \textbf{3.5+ years} building consumer apps at \textbf{30+ lakh DAU} scale and shipping solo full-stack products with \textbf{on-device AI}. Expert in \textbf{Swift, SwiftUI, UIKit, Flutter, Dart}, \textbf{Clean Architecture, MVVM, POP}, and \textbf{privacy-first on-device ML} (Core ML, \textbf{TensorFlow Lite}, \textbf{RAG}, \textbf{Apple Intelligence}, \textbf{Gemini Nano}). Proven in \textbf{offline-first} mobile, \textbf{mobile SDK} design, \textbf{REST APIs}, and \textbf{Context Engineering} for AI-assisted delivery.}
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.12in, label={}, topsep=1pt, itemsep=1pt, parsep=0pt]
+  \item{
+    \textbf{Languages:} Swift, Dart, Python, TypeScript \\[1pt]
+    \textbf{iOS:} SwiftUI, UIKit, Foundation, Combine, AVFoundation, LocalAuthentication, StoreKit, URLSession, UserNotifications, XCTest, XCUITest \\[1pt]
+    \textbf{Architecture \& Patterns:} MVVM, MVC, MVI, Clean Architecture, Protocol-Oriented Programming (POP), Generics, Server-Driven UI (SDUI), CMS Integration \\[1pt]
+    \textbf{On-Device AI / ML:} Apple Intelligence (Foundation Models), TFLite, Gemini Nano, BM25 \& Embedding-Based RAG, Cosine Similarity Retrieval \\[1pt]
+    \textbf{Concurrency:} GCD, OperationQueue, async/await, Combine, Actor Isolation, Thread-Safe Data Structures \\[1pt]
+    \textbf{Security:} SSL Pinning, Domain Whitelisting, Biometric Auth (Face ID / Touch ID), HTTPS Enforcement, HMAC-SHA1 TOTP \\[1pt]
+    \textbf{Backend \& Integrations:} REST APIs, Firebase (Crashlytics, Performance, Analytics, Remote Config), Mixpanel, Airship, NestJS, Prisma, Next.js \\[1pt]
+    \textbf{Cross-Platform:} Flutter, Dart, Provider, Hive  \\[1pt]
+    \textbf{Tooling \& CI/CD:} Xcode, Instruments, TestFlight, GitHub Actions, Cursor, Claude, GitHub Copilot
+  }
+\end{itemize}
+
+\section{Architecture Expertise}
+\begin{itemize}[leftmargin=0.17in, label={\textbullet}, itemsep=1pt, topsep=1pt, parsep=0pt]
+  \item \textbf{Design Patterns:} \textbf{MVVM, MVC, MVI, and Clean Architecture} (View / ViewModel / Domain / Data); legacy migrations with zero-regression delivery.
+  \item \textbf{Protocol-Oriented \& Generic Programming:} \textbf{Swift Protocols, Generics, and associated types} for type-safe ad pipelines, form systems, and SDK interfaces.
+  \item \textbf{iOS Platform Expertise:} Application lifecycle, deep linking, push notifications, HIG, adaptive layouts, accessibility, and responsive UI.
+  \item \textbf{On-Device AI \& Edge ML:} Offline RAG (BM25, embedding retrieval), \textbf{Apple Intelligence}, \textbf{TFLite}, \textbf{Gemini Nano} with fail-soft fallbacks --- privacy-first, zero cloud-LLM dependency.
+  \item \textbf{Server-Driven UI (SDUI) \& Concurrency:} CMS/remote-config driven headers, search, banners; \textbf{GCD, OperationQueue, async/await, Combine, actor isolation}; synchronised dictionaries and read-write locks.
+  \item \textbf{Context \& Prompt Engineering:} Cursor, Claude, and Copilot for architecturally sound, review-ready Swift delivery at accelerated velocity.
+\end{itemize}
 
 \section{Experience}
 \resumeSubHeadingListStart
 
 \resumeSubheading
   {District By Zomato \href{https://www.district.in/}{\faExternalLink*}}{Jan 2026 -- April 2026}
-  {\underline{Software Development Engineer (iOS) -- 1}}{Gurugram}
+  {\underline{Software Development Engineer}}{Gurugram}
   \resumeItemListStart
-    \resumeItem{Delivered \textbf{Free Parking} billing flow, \textbf{biometric (Face ID)} ticket access via LocalAuthentication, and on-call production fixes.}
-    \resumeItem{Applied \textbf{Context Engineering} with Cursor and Claude for MVVM/Clean Architecture migrations and AI-assisted reviews.}
+    \resumeItem{\textbf{iOS App Development:} Delivered Free Parking for billing adjustments using \textbf{UIKit} and \textbf{SwiftUI}; resolved production issues on-call.}
+    \resumeItem{\textbf{Architecture \& AI Development:} Cursor, Claude, and GitHub Copilot with \textbf{Context Engineering} for MVVM / Clean Architecture migrations; AI-assisted \textbf{code reviews}, \textbf{test case generation} (XCTest / XCUITest), and \textbf{structured logging}.}
   \resumeItemListEnd
 
 \resumeSubheading
   {BookMyShow \href{https://in.bookmyshow.com/}{\faExternalLink*}}{Oct 2024 -- Jan 2026}
-  {\underline{Software Development Engineer (iOS) -- 1}}{Mumbai}
+  {\underline{Software Development Engineer -- 1}}{Mumbai}
   \resumeItemListStart
-    \resumeItem{Maintained \textbf{30+ lakh DAU} app at \textbf{99.95\%+ crash-free sessions}; IMOC for P0/P1 incidents during peak events.}
-    \resumeItem{Owned highest-revenue \textbf{Ads Module}: HeroWidget pause/play lifecycle, \textbf{POP + Generics} pipeline; migrated Alamofire to \textbf{URLSession} with \textbf{SSL pinning}.}
-    \resumeItem{Shipped \textbf{LE Bottom Sheet} and backend-driven header/search; \textbf{Firebase Performance} traces at p50/p90 across core journeys.}
-    \resumeItem{Eliminated concurrent-access crashes with GCD synchronised dictionaries and read-write lock patterns.}
+    \resumeItem{\textbf{High-Scale Engineering:} \textbf{UIKit} and \textbf{SwiftUI} app at \textbf{30+ lakh DAU} with \textbf{99.95\%+ crash-free sessions} via Firebase Crashlytics triage and structured crash workflows.}
+    \resumeItem{\textbf{LE Bottom Sheet:} End-to-end event-overview component cutting full-screen navigations for 30\%+ of user flows.}
+    \resumeItem{\textbf{Ads Module (Revenue-Critical):} Refactored highest-revenue module; \textbf{pause/play lifecycle} for video ads in reusable \textbf{HeroWidget}; \textbf{POP + Generics} type-safe rendering pipeline.}
+    \resumeItem{\textbf{Payment Processing Popup:} Real-time payment/booking status popup to reduce checkout drop-off and support queries.}
+    \resumeItem{\textbf{Observability, Concurrency \& Backend-Driven UI:} Firebase Performance p50/p90 traces (listing, checkout, search); \textbf{synchronised dictionaries} via GCD serial queues and read-write locks; protocol-driven header; search with debouncing and MVVM alignment.}
+    \resumeItem{\textbf{Security, CI/CD \& IMOC:} Ads migrated Alamofire $\rightarrow$ \textbf{URLSession}; \textbf{HTTPS} and \textbf{SSL pinning with domain whitelisting}; GitHub Actions for build, lint, \textbf{TestFlight}; AI-assisted PR reviews; coordinated \textbf{P0/P1} incidents (IMOC).}
   \resumeItemListEnd
 
 \resumeSubheading
   {Raw Engineering \href{https://www.raweng.com/}{\faExternalLink*}}{Jan 2023 -- Oct 2024}
-  {\underline{Associate Software Engineer (iOS)}}{Mumbai}
+  {\underline{Associate Software Engineer (iOS + Flutter)}}{Mumbai}
   \resumeItemListStart
-    \resumeItem{Built NBA/WNBA apps (\textbf{Memphis Grizzlies, Miami Heat, Las Vegas Aces, Chicago Sky}); shipped reusable \textbf{Stories SDK} adopted portfolio-wide.}
-    \resumeItem{\textbf{SwiftUI+UIKit} interoperability, deep links, Mixpanel/Airship; led \textbf{Xcode 15} migration with zero-regression QA checklist.}
-    \resumeItem{Evaluated \textbf{Flutter} for cross-platform delivery; \textbf{MVVM}, GCD, Combine, and Instruments-driven performance tuning.}
+    \resumeItem{\textbf{Multi-App Ownership (NBA/WNBA):} Production iOS apps for \textbf{Memphis Grizzlies, Miami Heat, Las Vegas Aces, and Chicago Sky}.}
+    \resumeItem{\textbf{Memphis Grizzlies} \textit{(SwiftUI, UIKit, Deeplinks, Mixpanel, Airship):} \textbf{SwiftUI+UIKit interoperability}, deep linking, lifecycle handling; Mixpanel and Airship.}
+    \resumeItem{\textbf{Miami Heat \& Stories SDK} \textit{(SwiftUI, Live Updates):} Standalone reusable \textbf{Stories SDK} adopted portfolio-wide; managed \textbf{live in-arena scoreboard}.}
+    \resumeItem{\textbf{Las Vegas Aces \& Chicago Sky} \textit{(UIKit, Deeplinks, TicketMaster, SDKs):} \textbf{Audio streaming} for live broadcasts; server-driven splash cutting cold-start latency; led \textbf{Xcode 15 migration} with zero-regression checklist.}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-\section{Personal Projects}
+\section{Projects}
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-    {\href{https://github.com/Siddiqui-Shahid/SpendingTracker}{\textbf{FinTrack}} \faExternalLink* \;|\; \textit{Flutter, Dart, Hive, On-device AI, RAG, BM25}}{Privacy-first expense tracker}
+    {\href{https://apps.apple.com/in/app/bookmyshow-movies-events/id405894842}{BookMyShow}}
+    {UIKit, SwiftUI, MVVM, Backend-Driven UI, Firebase, SSL Pinning}
+    {India's \#1 Ticketing App}
     \resumeItemListStart
-      \resumeItem{Shipped \textbf{offline-first} Android/iOS app: Hive storage, biometric lock, insights charts, AdMob + Firebase Crashlytics/Remote Config.}
-      \resumeItem{Built \textbf{AI Savings Coach}: \textbf{BM25 RAG} on local ledger + \textbf{Apple Intelligence / Gemini Nano} via custom \textbf{flutter\_native\_ai} plugin; \textbf{RuleBasedCoach} fallback --- no cloud LLM for spend data.}
+      \resumeItem{\textbf{30+ lakh DAU}; \textbf{99.95\%+ crash-free sessions}. Owned Ads Module, LE Bottom Sheet, backend-driven header, search modernisation, SSL pinning, concurrency-safe shared state.}
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {\href{https://github.com/Siddiqui-Shahid/gymautomation}{\textbf{GymFlow}} \faExternalLink* \;|\; \textit{NestJS, Prisma, Next.js, Flutter, TFLite}}{Full-stack gym ops (India-first)}
+    {Miami Heat iOS App}
+    {SwiftUI, Standalone SDK, Live Updates, REST API}
+    {NBA Fan Engagement}
     \resumeItemListStart
-      \resumeItem{Designed multi-role product (Owner/Staff/Trainer/Member): one \textbf{NestJS/Prisma API}, Next.js portal, Flutter app with geofenced QR + \textbf{HMAC TOTP} check-in.}
-      \resumeItem{Integrated on-device \textbf{MiniLM (TFLite)} embeddings + WordPiece tokenizer for workout recommendations; trainer plan as \textbf{RAG} context with \textbf{TF-IDF} fail-soft fallback.}
-      \resumeItem{India GTM: INR/UPI receipts, \textbf{wa.me} lead follow-ups; migrated Firebase BaaS to owned API for pilot deploy control.}
+      \resumeItem{Reusable \textbf{Stories SDK} for Instagram-style fan content, adopted across the portfolio; \textbf{in-arena live scoreboard} for real-time match stats.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {District by Zomato}
+    {Swift, MVVM, Clean Architecture, XCTest}
+    {Consumer Super App}
+    \resumeItemListStart
+      \resumeItem{\textbf{Free Parking} billing feature; \textbf{Context Engineering} with Cursor and Claude for MVVM / Clean Architecture migration with zero regressions.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {FinTrack -- On-Device AI Expense Tracker \href{https://github.com/Siddiqui-Shahid/SpendingTracker}{\faGithub\ \faExternalLink*}}
+    {Flutter, Dart, Hive, BM25 RAG, Apple Intelligence, Gemini Nano}
+    {Personal Product}
+    \resumeItemListStart
+      \resumeItem{Privacy-first, local-first expense tracker with offline Hive storage and biometric lock --- \textbf{no cloud sync of financial data}. On-device AI Savings Coach via \textbf{Apple Foundation Models} / \textbf{Gemini Nano}, \textbf{BM25 offline RAG}, and rule-based fallback.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {GymFlow -- Gym Operations Platform \href{https://github.com/Siddiqui-Shahid/gymautomation}{\faGithub\ \faExternalLink*}}
+    {NestJS, Prisma, Next.js, Flutter, TFLite}
+    {Personal Product}
+    \resumeItemListStart
+      \resumeItem{Multi-role B2B on \textbf{NestJS + Prisma} with Next.js portal and Flutter app. Geofenced QR + \textbf{HMAC-SHA1 rotating TOTP}; on-device \textbf{MiniLM (TFLite)} workout recommender with RAG --- no cloud LLM.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.17in, label={}, topsep=3pt, itemsep=3pt]
-  \small{\item{
-    \textbf{Languages:} Swift, Dart, TypeScript, Python \\[2pt]
-    \textbf{Mobile:} SwiftUI, UIKit, Flutter, Clean Architecture, MVVM, POP, Offline-first, Mobile SDK Development, Deep Links, LocalAuthentication \\[2pt]
-    \textbf{On-Device AI:} Core ML, TensorFlow Lite, RAG, BM25, Apple Intelligence, Gemini Nano, Privacy Engineering, Semantic Retrieval \\[2pt]
-    \textbf{Backend \& Web:} NestJS, Prisma, Next.js, REST APIs, JWT, Firebase (Crashlytics, Performance, Remote Config) \\[2pt]
-    \textbf{Security \& Ops:} SSL Pinning, Biometric Auth, GCD/async-await/Combine, Context Engineering, Xcode Instruments \\[2pt]
-    \textbf{ATS Keywords:} Swift, SwiftUI, UIKit, Flutter, Dart, On-device AI, Core ML, TensorFlow Lite, RAG, Apple Intelligence, Gemini Nano, MVVM, Clean Architecture, Firebase, Privacy Engineering, Mobile SDK Development, REST APIs, Context Engineering, Offline-first, Protocol-Oriented Programming
-  }}
-\end{itemize}
 
 \end{document}

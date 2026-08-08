@@ -40,9 +40,9 @@ export const site = {
     heading:
       'Have an idea, role, or project? Reach out — I typically reply within a few snack breaks 😁',
   },
-  /** Full URL (https://…) or a PDF under `public/`, e.g. `resume.pdf` */
+  /** PDF under `public/` — regenerate with `npm run resume` */
   resume: {
-    href: 'https://drive.google.com/file/d/1ymzjpyzXxuXFYOSftRGA9K-r0Muou4He/view',
+    href: 'resume.pdf',
     label: 'Resume',
   },
 } as const

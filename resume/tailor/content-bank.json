@@ -1,0 +1,301 @@
+{
+  "meta": {
+    "name": "MUHAMMED SHAHID SIDDIQUI",
+    "email": "teamworkwithshahid@gmail.com",
+    "phone": "+91 99304 36814",
+    "phoneHref": "+919930436814",
+    "linkedin": "https://www.linkedin.com/in/shahid-siddiqui-25931b197/",
+    "github": "https://github.com/Siddiqui-Shahid",
+    "portfolio": "https://siddiqui-shahid.github.io/MyWebsite/",
+    "education": "Mumbai University --- May 2023 --- B.E.\\ (Computer Engineering) --- \\textbf{CGPA: 8.96}",
+    "yearsExperience": "3.5+"
+  },
+  "defaultTitle": "iOS \\& AI-Native Software Engineer",
+  "defaultSummaryLines": [
+    "with \\textbf{3.5+ years} shipping consumer apps at \\textbf{30+ lakh DAU}.",
+    "Expert in \\textbf{MVVM, Clean Architecture, Protocol-Oriented Programming (POP)}, and Generics.",
+    "Skilled in \\textbf{on-device AI}, \\textbf{SDUI}, \\textbf{Context Engineering} (Cursor, Claude, Copilot), concurrency, and \\textbf{Flutter}."
+  ],
+  "experience": [
+    {
+      "id": "district",
+      "company": "District By Zomato",
+      "companyHref": "https://www.district.in/",
+      "dates": "Jan 2026 -- April 2026",
+      "title": "Software Development Engineer",
+      "location": "Gurugram",
+      "bullets": [
+        {
+          "id": "district-parking",
+          "tags": ["ios", "product", "billing"],
+          "text": "\\textbf{iOS App Development:} Delivered Free Parking feature for billing adjustments and resolved production issues on-call."
+        },
+        {
+          "id": "district-arch-ai",
+          "tags": ["architecture", "ai", "mvvm", "clean-architecture", "context-engineering"],
+          "text": "\\textbf{Architecture Leadership \\& AI Development:} Used Cursor, Claude, and GitHub Copilot with \\textbf{Context Engineering} to drive architectural decisions and accelerate migration across MVVM and Clean Architecture patterns."
+        },
+        {
+          "id": "district-ai-productivity",
+          "tags": ["ai", "testing", "xctest", "debugging"],
+          "text": "\\textbf{AI-Driven Productivity:} Leveraged AI for \\textbf{code reviews}, automated \\textbf{test case generation} (XCTest / XCUITest), and systematic debugging via \\textbf{structured logging}, improving velocity and solution quality."
+        }
+      ]
+    },
+    {
+      "id": "bookmyshow",
+      "company": "BookMyShow",
+      "companyHref": "https://in.bookmyshow.com/",
+      "dates": "Oct 2024 -- Jan 2026",
+      "title": "Software Development Engineer -- 1",
+      "location": "Mumbai",
+      "bullets": [
+        {
+          "id": "bms-scale",
+          "tags": ["ios", "scale", "reliability", "firebase", "crashlytics"],
+          "text": "\\textbf{High-Scale Engineering:} Maintained a \\textbf{30+ lakh DAU} consumer app sustaining \\textbf{99.95\\%+ crash-free sessions} under peak load via Firebase Crashlytics triage and structured crash workflows."
+        },
+        {
+          "id": "bms-bottom-sheet",
+          "tags": ["ios", "ui", "product", "collaboration"],
+          "text": "\\textbf{LE Bottom Sheet:} Led end-to-end delivery of a lightweight event-overview component reducing full-screen navigations for 30\\%+ of user flows; collaborated across PM, Design, and Backend on API contracts."
+        },
+        {
+          "id": "bms-ads",
+          "tags": ["ios", "architecture", "pop", "generics", "revenue", "video"],
+          "text": "\\textbf{Ads Module (Revenue-Critical):} Refactored the highest-revenue module; added \\textbf{pause/play lifecycle} for video ads inside a reusable \\textbf{HeroWidget}. Used \\textbf{POP + Generics} for a type-safe rendering pipeline."
+        },
+        {
+          "id": "bms-payment",
+          "tags": ["ios", "payments", "ux", "checkout"],
+          "text": "\\textbf{Payment Processing-Time Popup:} Designed and shipped a lightweight popup surfacing real-time payment/booking processing status to reduce user drop-off and support queries during checkout delays."
+        },
+        {
+          "id": "bms-perf",
+          "tags": ["observability", "firebase", "performance"],
+          "text": "\\textbf{Firebase Performance Traces:} Instrumented p50/p90 latency across listing, checkout, and search journeys, forming an observability layer for data-driven optimisation across releases."
+        },
+        {
+          "id": "bms-concurrency",
+          "tags": ["concurrency", "gcd", "thread-safety", "ios"],
+          "text": "\\textbf{Concurrency Safety:} Introduced \\textbf{synchronised dictionaries} via GCD serial queues and read-write locks to eliminate race conditions and concurrent-access crashes in shared async state."
+        },
+        {
+          "id": "bms-sdui-search",
+          "tags": ["sdui", "mvvm", "search", "protocol", "cms"],
+          "text": "\\textbf{Backend-Driven Header \\& Search:} Migrated the app header to a \\textbf{generalised, protocol-driven} main-screen implementation; modernised search with debouncing, state indication, and MVVM alignment."
+        },
+        {
+          "id": "bms-security",
+          "tags": ["security", "ssl", "https", "urlsession", "networking"],
+          "text": "\\textbf{Security \\& Performance:} Migrated Ads pod from Alamofire to \\textbf{URLSession}. Enforced \\textbf{HTTPS} and \\textbf{SSL pinning with domain whitelisting} to mitigate MITM attacks."
+        },
+        {
+          "id": "bms-cicd",
+          "tags": ["cicd", "github-actions", "testflight", "ai"],
+          "text": "\\textbf{CI/CD \\& Release Automation:} Set up \\textbf{automated GitHub Actions} pipelines for build, lint, and \\textbf{TestFlight} distribution, cutting manual release overhead; used \\textbf{AI-assisted PR reviews} (Copilot/Claude) to catch regressions before merge."
+        },
+        {
+          "id": "bms-imoc",
+          "tags": ["incident", "oncall", "leadership"],
+          "text": "\\textbf{Incident Management (IMOC):} Coordinated iOS, backend, and QA teams to triage and resolve \\textbf{P0/P1 incidents}, minimising downtime during high-traffic events."
+        }
+      ]
+    },
+    {
+      "id": "raweng",
+      "company": "Raw Engineering",
+      "companyHref": "https://www.raweng.com/",
+      "dates": "Jan 2023 -- Oct 2024",
+      "title": "Associate Software Engineer (Flutter + iOS)",
+      "location": "Mumbai",
+      "bullets": [
+        {
+          "id": "raw-multiapp",
+          "tags": ["ios", "flutter", "sports", "ownership"],
+          "text": "\\textbf{Multi-App Ownership (NBA/WNBA):} Built and maintained production iOS apps for \\textbf{Memphis Grizzlies, Miami Heat, Las Vegas Aces, and Chicago Sky} serving hundreds of thousands of sports fans."
+        },
+        {
+          "id": "raw-grizzlies",
+          "tags": ["swiftui", "uikit", "deeplinks", "analytics", "push"],
+          "text": "\\textbf{Memphis Grizzlies} \\textit{(SwiftUI, UIKit, Deeplinks, Mixpanel, Airship):} Architected key UI with \\textbf{SwiftUI+UIKit interoperability}, deep linking, navigation flows, and application lifecycle handling. Integrated \\textbf{Mixpanel} and \\textbf{Airship} for analytics and push notifications."
+        },
+        {
+          "id": "raw-heat-stories",
+          "tags": ["swiftui", "sdk", "live-updates", "reusable"],
+          "text": "\\textbf{Miami Heat \\& Stories SDK} \\textit{(SwiftUI, Live Updates):} Designed and shipped a \\textbf{standalone reusable Stories SDK} for Instagram-style fan content, adopted across the client portfolio. Managed the \\textbf{live in-arena scoreboard}."
+        },
+        {
+          "id": "raw-aces",
+          "tags": ["uikit", "audio", "sdui", "performance"],
+          "text": "\\textbf{Las Vegas Aces} \\textit{(UIKit, Deeplinks):} Integrated \\textbf{audio streaming} for live broadcasts; revamped splash screen with server-driven content reducing cold-start latency."
+        },
+        {
+          "id": "raw-sky",
+          "tags": ["uikit", "migration", "xcode", "sdks", "ticketmaster"],
+          "text": "\\textbf{Chicago Sky -- Migration} \\textit{(UIKit, TicketMaster, SDKs):} Led \\textbf{Xcode 15 migration}, resolving breaking SDK and deprecated API changes with a QA-driven, zero-regression checklist."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "fintrack",
+      "name": "FinTrack -- On-Device AI Expense Tracker",
+      "href": "https://github.com/Siddiqui-Shahid/SpendingTracker",
+      "stack": "Flutter, Dart, Hive, BM25 RAG, Apple Intelligence, Gemini Nano",
+      "tagline": "Personal Product",
+      "tags": ["flutter", "on-device-ai", "rag", "privacy", "apple-intelligence", "gemini-nano"],
+      "bullets": [
+        "Built a \\textbf{privacy-first, local-first} Flutter expense tracker (Android/iOS) with offline Hive storage and biometric app lock; \\textbf{no cloud sync of financial data}.",
+        "Designed an \\textbf{on-device AI Savings Coach}: custom \\texttt{flutter\\_native\\_ai} plugin bridging Flutter to \\textbf{Apple Foundation Models} (iOS) and \\textbf{Gemini Nano / ML Kit Prompt API} (Android) via Pigeon, with a \\textbf{BM25 offline RAG retriever} over the user's local spending index and a deterministic rule-based fallback for unsupported devices.",
+        "Shipped production ops: Firebase Crashlytics, Remote Config-driven force/optional updates, and AdMob monetisation -- app released on the Play Store."
+      ]
+    },
+    {
+      "id": "gymflow",
+      "name": "GymFlow -- Gym Operations Platform",
+      "href": "https://github.com/Siddiqui-Shahid/gymautomation",
+      "stack": "NestJS, Prisma, Next.js, Flutter, TFLite",
+      "tagline": "Personal Product",
+      "tags": ["nestjs", "prisma", "nextjs", "flutter", "tflite", "rag", "security", "fullstack"],
+      "bullets": [
+        "Architected a multi-role B2B platform (Owner/Staff/Trainer/Member) on one \\textbf{NestJS + Prisma} API serving a \\textbf{Next.js} staff portal and a single \\textbf{Flutter} member/trainer app with role-based navigation.",
+        "Implemented secure attendance: geofenced QR check-in plus an \\textbf{HMAC-SHA1 rotating TOTP} desk bypass (30s rotation), membership gating, memberships/payments, and lead/WhatsApp follow-up workflows.",
+        "Built an \\textbf{on-device workout recommender}: INT8-quantised \\textbf{MiniLM (TFLite)} embeddings with a Dart WordPiece tokenizer for cosine-similarity retrieval over the exercise catalog, using the trainer's routine as \\textbf{RAG context}, with a fail-soft TF-IDF fallback -- no cloud LLM dependency."
+      ]
+    },
+    {
+      "id": "bms-app",
+      "name": "BookMyShow",
+      "href": "https://apps.apple.com/in/app/bookmyshow-movies-events/id405894842",
+      "stack": "UIKit, SwiftUI, MVVM, Backend-Driven UI, Firebase, SSL Pinning",
+      "tagline": "India's \\#1 Ticketing App",
+      "tags": ["ios", "scale", "sdui", "firebase", "security"],
+      "bullets": [
+        "Scaled to \\textbf{30+ lakh DAU}; \\textbf{99.95\\%+ crash-free sessions}. Owned Ads Module, LE Bottom Sheet, backend-driven header, search modernisation, SSL pinning, and synchronised dictionaries end-to-end."
+      ]
+    },
+    {
+      "id": "miami-heat",
+      "name": "Miami Heat iOS App",
+      "href": null,
+      "stack": "SwiftUI, Standalone SDK, Live Updates, REST API",
+      "tagline": "NBA Fan Engagement",
+      "tags": ["ios", "swiftui", "sdk", "live-updates"],
+      "bullets": [
+        "Shipped a \\textbf{reusable Stories SDK} for Instagram-style fan content, adopted across the portfolio. Managed the \\textbf{in-arena live scoreboard} for real-time match statistics with high reliability."
+      ]
+    },
+    {
+      "id": "district-app",
+      "name": "District by Zomato",
+      "href": null,
+      "stack": "Swift, MVVM, Clean Architecture, XCTest",
+      "tagline": "Consumer Super App",
+      "tags": ["ios", "mvvm", "clean-architecture", "ai", "testing"],
+      "bullets": [
+        "\\textbf{Free Parking} billing feature. Used \\textbf{Context Engineering} with Cursor and Claude to migrate across MVVM and Clean Architecture with zero regressions."
+      ]
+    }
+  ],
+  "architectureExpertise": [
+    {
+      "id": "design-patterns",
+      "tags": ["mvvm", "mvc", "mvi", "clean-architecture"],
+      "text": "\\textbf{Design Patterns:} Expert in \\textbf{MVVM, MVC, MVI (Model-View-Intent), and Clean Architecture} (View / ViewModel / Domain / Data separation). Experienced migrating legacy codebases with zero-regression delivery."
+    },
+    {
+      "id": "pop-generics",
+      "tags": ["pop", "generics", "swift", "architecture"],
+      "text": "\\textbf{Protocol-Oriented \\& Generic Programming:} Extensive use of \\textbf{Swift Protocols, Generics, and associated types} for composable, type-safe components across ad pipelines, form systems, and SDK interfaces."
+    },
+    {
+      "id": "on-device-ai",
+      "tags": ["on-device-ai", "rag", "tflite", "apple-intelligence", "gemini-nano"],
+      "text": "\\textbf{On-Device AI \\& Edge ML:} Designed \\textbf{offline RAG pipelines} (BM25 and embedding-based cosine retrieval), integrated \\textbf{TFLite}, \\textbf{Apple Intelligence}, and \\textbf{Gemini Nano} for on-device inference with fail-soft, rule-based fallbacks -- privacy-first, zero cloud-LLM dependency."
+    },
+    {
+      "id": "cross-platform",
+      "tags": ["flutter", "dart", "swift", "cross-platform"],
+      "text": "\\textbf{Cross-Platform Development:} Built and shipped production \\textbf{Flutter/Dart} apps (feature-first Clean Architecture, Provider state management) alongside native \\textbf{Swift/SwiftUI} apps, sharing one backend API across platforms."
+    },
+    {
+      "id": "ios-platform",
+      "tags": ["ios", "hig", "deeplinks", "accessibility"],
+      "text": "\\textbf{iOS Platform Expertise:} Strong understanding of Apple's application lifecycle, deep linking, push notification lifecycle, Human Interface Guidelines (HIG), adaptive layouts, accessibility, and responsive UI design."
+    },
+    {
+      "id": "sdui",
+      "tags": ["sdui", "cms", "remote-config"],
+      "text": "\\textbf{Server-Driven UI (SDUI) \\& CMS Integration:} Designed and consumed \\textbf{SDUI} systems -- headers, search, banners -- fully controlled by \\textbf{CMS}-managed content and remote configuration, decoupling client releases from layout and content changes."
+    },
+    {
+      "id": "concurrency",
+      "tags": ["concurrency", "gcd", "async-await", "combine", "actors"],
+      "text": "\\textbf{Concurrency \\& Thread Safety:} \\textbf{GCD, OperationQueue, async/await, Combine, and actor isolation}. Eliminated data races with synchronised dictionaries and read-write lock patterns in production."
+    },
+    {
+      "id": "context-engineering",
+      "tags": ["context-engineering", "prompt-engineering", "ai", "cursor", "claude"],
+      "text": "\\textbf{Context \\& Prompt Engineering:} Structured \\textbf{Context Engineering} and \\textbf{Prompt Engineering} with Cursor, Claude, and Copilot to produce architecturally sound, review-ready code at accelerated velocity across Swift and Flutter codebases."
+    }
+  ],
+  "skillCategories": [
+    {
+      "id": "languages",
+      "label": "Languages",
+      "items": ["Swift", "Dart", "Python", "TypeScript"]
+    },
+    {
+      "id": "ios",
+      "label": "iOS",
+      "items": ["SwiftUI", "UIKit", "Foundation", "Combine", "AVFoundation", "LocalAuthentication", "StoreKit", "URLSession", "UserNotifications", "XCTest", "XCUITest"]
+    },
+    {
+      "id": "architecture",
+      "label": "Architecture \\& Patterns",
+      "items": ["MVVM", "MVC", "MVI", "Clean Architecture", "Protocol-Oriented Programming (POP)", "Generics", "Functional Programming", "Metaprogramming", "Server-Driven UI (SDUI)", "CMS Integration", "Context Engineering", "Architecture Leadership"]
+    },
+    {
+      "id": "on-device-ai",
+      "label": "On-Device AI / ML",
+      "items": ["TFLite (INT8 quantised MiniLM)", "Apple Intelligence (Foundation Models)", "Gemini Nano (ML Kit Prompt API)", "BM25 \\& Embedding-Based RAG", "WordPiece Tokenization", "Cosine Similarity Retrieval"]
+    },
+    {
+      "id": "concurrency",
+      "label": "Concurrency",
+      "items": ["GCD (Grand Central Dispatch)", "OperationQueue", "async/await", "Combine", "Actor Isolation", "Thread-Safe Data Structures"]
+    },
+    {
+      "id": "security",
+      "label": "Security",
+      "items": ["SSL Pinning", "Domain Whitelisting", "Biometric Authentication (Face ID / Touch ID)", "HTTPS Enforcement", "MITM Mitigation", "HMAC-SHA1 TOTP"]
+    },
+    {
+      "id": "backend",
+      "label": "Backend \\& Integrations",
+      "items": ["NestJS", "Prisma", "Next.js", "REST APIs", "Firebase (Crashlytics, Performance, Analytics, Remote Config)", "Mixpanel", "Airship", "TicketMaster API", "Deeplinks / Universal Links"]
+    },
+    {
+      "id": "cross-platform",
+      "label": "Cross-Platform",
+      "items": ["Flutter", "Dart", "Provider", "Hive"]
+    },
+    {
+      "id": "observability",
+      "label": "Observability \\& Tooling",
+      "items": ["Firebase Performance Traces (p50/p90)", "Xcode Instruments (Time Profiler, Allocations, Leaks)", "Structured Logging", "Crash Triage Workflows"]
+    },
+    {
+      "id": "cicd",
+      "label": "CI/CD \\& Release",
+      "items": ["TestFlight", "Automated GitHub Actions Pipelines", "AI-Assisted PR Reviews"]
+    },
+    {
+      "id": "devtools",
+      "label": "AI \\& DevTools",
+      "items": ["Cursor", "Claude (Context Engineering, Prompt Engineering)", "GitHub Copilot", "Gemini", "Xcode", "Git", "GitHub", "VS Code", "Android Studio"]
+    }
+  ]
+}

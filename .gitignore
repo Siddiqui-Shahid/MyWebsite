@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# LaTeX build artifacts (keep generated PDFs)
+resume/build/
+resume/*.aux
+resume/*.log
+resume/*.out
+resume/*.fls
+resume/*.fdb_latexmk
+resume/*.synctex.gz
+
+# Tailored resume runs (JD-specific outputs)
+resume/out/

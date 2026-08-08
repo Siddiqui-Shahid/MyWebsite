@@ -1,0 +1,71 @@
+Paste the full job description below this line, then run:
+  npm run resume:tailor
+
+---
+About the job
+About Quin
+
+Quin is redefining smart safety with real-time event detection and data-driven response systems that save lives. We embed our proprietary technology into helmets and wearables through B2B partnerships with global brands. With a strong foothold in motorcycling and a strategic focus on Cycling and Industrial Safety, our technology is already trusted by top names across the U.S. and Europe.
+
+We’re a fast-moving, purpose-driven team building industry-leading technology that brings intelligence into safety gear. If you’re ready to be a part of work that is making a human impact through tech —this is your opportunity.
+
+Job Description;
+
+We are seeking a passionate and experienced Senior iOS Developer to join our dynamic team and contribute to the development of exceptional iOS applications that enhance road safety and rider experience. As a key member of our development team, you will play a crucial role in shaping the future of our mobile applications and integrating them with our smart helmet Technology.
+
+Technical Skills (Experience: Senior Level);
+
+Expertise in Swift, SwiftUI, and Combine.
+Strong understanding of BLE, IoT protocols, and peripheral device communication.
+Experience implementing Firmware Over-The-Air (FOTA) updates (Nordic DFU or similar).
+Proficient in working with Firebase, MoEngage, and push notification customization.
+Good understanding of App Store Connect, TestFlight, provisioning, and release management.
+Experience with RevenueCat or similar in-app purchase solutions.
+Strong understanding of SPM, CocoaPods, and integrating 3rd party SDKs.
+Comfortable working with URLSession, JSON parsing, and modern concurrency (async/await).
+Familiar with Git workflows, Bitbucket pipelines, and Jira for agile development.
+Passion for clean architecture, code quality, and performance optimization.
+
+Key Responsibilities;
+
+Lead the development of iOS apps using SwiftUI (preferably SwiftUI 4.0 and above).
+Build and maintain complex, dynamic UI components with adaptive layouts.
+Integrate and manage Bluetooth Low Energy (BLE) devices and support IoT communication protocols.
+Implement and manage FOTA updates using platforms like Nordic DFU or custom update protocols.
+Handle push notifications including rich media notifications with Firebase Cloud Messaging (FCM) and MoEngage.
+Manage in-app purchases and subscriptions using RevenueCat or Apple’s StoreKit framework.
+Configure and maintain App Store distribution, TestFlight builds, and release pipelines.
+Create and manage Swift Package Manager (SPM) modules and reusable components.
+Work with RESTful APIs using URLSession, async/await, and Combine for data flow and reactive bindings.
+Evaluate and implement new iOS 18 APIs, ensuring apps leverage the latest Apple platform capabilities.
+Debug, track, and resolve complex issues using Jira, Bitbucket, and Git.
+Collaborate with cross-functional teams in Agile/Scrum environments
+Work with 3d models
+Familiarity with CoreBluetooth, background BLE operations, and watchOS
+Work with location manager/geo fencing
+Experience with Quality practices like test driven development,CI/CD, writing code covered with automated tests , performing pull request reviews (code reviews) for alignment with coding standards and best practices for ios development 
+Has good experience with handling application performance tuning, app profiling, memory management code optimizations, integration with APIs, optimization of memory, battery and CPU for the apps
+
+Required Qualifications; 
+
+Bachelor’s degree in Computer Science, Software Engineering, or related field
+5+ years of experience in iOS app development
+Strong proficiency in Swift, SwiftUI, and iOS ecosystem
+Expert in programming for processing, algorithm integration, and optimization
+Deep understanding of iOS design patterns and architectural principles
+Experience with Core Bluetooth, BLE programming, and location management
+Strong knowledge of databases, backend services, and UI/UX principles
+Excellent problem-solving, debugging, and communication skills
+Experience with Core Data, Firebase, and analytics tools
+Familiarity with payment integration (Apple IAP)
+Knowledge of CI/CD pipelines and automation tools
+Experience with Agile methodologies and sprint-based delivery 
+
+Nice to Have;
+
+Exposure to ARKit, VisionKit, or other iOS 18-specific features.
+Experience in unit testing, UI testing, or CI/CD automation.
+
+Why Join Quin;
+
+At Quin, you will be part of a passionate team dedicated to making a real difference in riders' lives. We offer a dynamic work environment where your ideas can directly impact product development and rider safety. You will have the opportunity to work on ground-breaking technology, collaborate with passionate experts, and contribute to shaping the future of rider safety. Join us in our mission to make riding smarter, safer, and more enjoyable. If you are excited about leveraging cutting-edge technology to enhance road safety and rider experience, Quin is the perfect place for you to accelerate your career. We are not just employees, we are innovators, riders, and guardians of the road. Come be part of a company that is redefining what it means to ride safely in the modern world.
