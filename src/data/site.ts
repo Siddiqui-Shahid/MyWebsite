@@ -6,7 +6,7 @@ export const site = {
     headline:
       'iOS & AI-native engineer — production apps and on-device intelligence',
     subheadline:
-      '3.5+ years shipping at BookMyShow (30+ lakh DAU), District by Zomato, and NBA team apps — plus solo-built FinTrack and GymFlow with on-device RAG, TFLite, and privacy-first architecture. Swift, Flutter, Clean Architecture, and AI-assisted delivery.',
+      '3.5+ years shipping at BookMyShow (30+ lakh DAU), District by Zomato, and NBA team apps — plus solo-built FinTrack, Volt, and GymFlow with on-device RAG, TFLite, and privacy-first architecture. Swift, Flutter, Clean Architecture, and AI-assisted delivery.',
     photoAlt: 'Portrait of Shahid, iOS and AI-native mobile engineer',
     /** Short labels for the hero visual — stacked cards */
     stackCards: [
@@ -25,11 +25,12 @@ export const site = {
       'BookMyShow',
       'District by Zomato',
       'FinTrack',
+      'Volt',
       'GymFlow',
     ] as const,
   },
   about:
-    'I am an iOS and AI-native software engineer who ships production mobile at scale and builds privacy-first products end-to-end. At BookMyShow I owned revenue-critical surfaces for 30+ lakh daily users; at District by Zomato I delivered native flows with biometric security and AI-assisted architecture migrations. Solo, I built FinTrack — a Flutter expense app with BM25 RAG and Apple Intelligence / Gemini Nano coaching that never sends spending data to the cloud — and GymFlow, a full-stack gym ops platform with geofenced QR check-in and on-device MiniLM workout recommendations. I combine Swift, Flutter, Clean Architecture, and Context Engineering to move fast without compromising trust boundaries.',
+    'I am an iOS and AI-native software engineer who ships production mobile at scale and builds privacy-first products end-to-end. At BookMyShow I owned revenue-critical surfaces for 30+ lakh daily users; at District by Zomato I delivered native flows with biometric security and AI-assisted architecture migrations. Solo, I built FinTrack — a Flutter expense app with BM25 RAG and Apple Intelligence / Gemini Nano coaching that never sends spending data to the cloud — Volt, an offline SwiftUI strength app with session builder and rest timer — and GymFlow, a full-stack gym ops platform with geofenced QR check-in and on-device MiniLM workout recommendations. I combine Swift, Flutter, Clean Architecture, and Context Engineering to move fast without compromising trust boundaries.',
   nextProject: {
     title: 'Building something with mobile or on-device AI?',
     subtext:

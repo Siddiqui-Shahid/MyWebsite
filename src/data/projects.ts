@@ -1,3 +1,8 @@
+export type ProjectScreenshot = {
+  src: string
+  alt: string
+}
+
 export type Project = {
   title: string
   tech: string[]
@@ -7,6 +12,8 @@ export type Project = {
   href?: string
   linkLabel?: string
   imageSrc?: string
+  /** Phone UI captures for in-card demo scroll */
+  screenshots?: ProjectScreenshot[]
 }
 
 export const projects: Project[] = [
@@ -32,6 +39,37 @@ export const projects: Project[] = [
       'Shipped a store-ready privacy product with real on-device AI — not a cloud chatbot bolt-on.',
     linkLabel: 'GitHub',
     href: 'https://github.com/Siddiqui-Shahid/SpendingTracker',
+    screenshots: [
+      { src: 'projects/fintrack/home_screen.jpg', alt: 'FinTrack home — balances and recent spending' },
+      { src: 'projects/fintrack/add_transaction.jpg', alt: 'FinTrack add transaction screen' },
+      { src: 'projects/fintrack/spending_insights.jpg', alt: 'FinTrack spending insights charts' },
+      { src: 'projects/fintrack/transaction_history.jpg', alt: 'FinTrack transaction history' },
+      { src: 'projects/fintrack/categories.jpg', alt: 'FinTrack categories screen' },
+      { src: 'projects/fintrack/settings.jpg', alt: 'FinTrack settings and privacy options' },
+    ],
+  },
+  {
+    title: 'Volt',
+    tech: ['Swift', 'SwiftUI', 'MVVM', 'Offline-first', 'iOS 17+'],
+    bullets: [
+      'Offline strength app: build today’s session (Push / Pull / Legs / Chest / Mix / Custom) and train without accounts or network.',
+      'Live exercise mode with weight stepper, set logging, and a lime rest-timer ring (+15s / Skip).',
+      'Tabs for Today, Programs, Progress, and Profile with glass chrome — fully local, no HealthKit.',
+      'Portfolio demo rebuilt from a Forge (Sleek) workout design reference into production SwiftUI.',
+    ],
+    impact:
+      'End-to-end SwiftUI product demo — session builder → exercise mode → rest → summary, fully offline.',
+    linkLabel: 'GitHub',
+    href: 'https://github.com/Siddiqui-Shahid/Volt',
+    screenshots: [
+      { src: 'projects/volt/01-today.jpg', alt: 'Volt Today tab — build and start workout' },
+      { src: 'projects/volt/02-programs.jpg', alt: 'Volt Programs library' },
+      { src: 'projects/volt/03-progress.jpg', alt: 'Volt Progress charts' },
+      { src: 'projects/volt/05-select-exercises.jpg', alt: 'Volt select exercises for custom session' },
+      { src: 'projects/volt/06-exercise-mode.jpg', alt: 'Volt live exercise mode logging sets' },
+      { src: 'projects/volt/07-rest-timer.jpg', alt: 'Volt rest timer between sets' },
+      { src: 'projects/volt/08-session-complete.jpg', alt: 'Volt session complete summary' },
+    ],
   },
   {
     title: 'GymFlow',
