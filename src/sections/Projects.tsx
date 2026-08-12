@@ -58,8 +58,8 @@ export function Projects() {
           Projects
         </h2>
         <p className="mt-3 max-w-2xl text-lg text-text-secondary">
-          Solo-built FinTrack, Volt, and GymFlow — plus production work at BookMyShow,
-          District by Zomato, and NBA / WNBA team apps.
+          Solo-built Talent Copilot, FinTrack, Volt, and GymFlow — plus production work at
+          BookMyShow, District by Zomato, and NBA / WNBA team apps.
         </p>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

@@ -18,6 +18,40 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'GradAxis Talent Copilot',
+    tech: [
+      'SwiftUI',
+      'Kotlin Compose',
+      'Next.js',
+      'FastAPI',
+      'Ollama',
+      'Local LLM',
+      'BM25',
+      'SQLite',
+    ],
+    bullets: [
+      'Recruiter workspace across iOS, Android, and Web: create roles, upload candidates, rank matches, track outreach.',
+      'BM25 ranking works offline; quote-backed fit evidence and WhatsApp drafts via local Ollama (llama3.2 / qwen2.5) — no cloud LLM API.',
+      'PDF Scorer grades resumes 0–100 against a role with rubric + rationale on-device via local models.',
+      'FastAPI + SQLite backend shared by SwiftUI, Jetpack Compose, and Next.js clients.',
+    ],
+    impact:
+      'Full-stack talent copilot with local AI — ranking, evidence, and PDF scoring without shipping resumes to a cloud LLM.',
+    linkLabel: 'GitHub',
+    href: 'https://github.com/Siddiqui-Shahid/Talent-copilot',
+    screenshots: [
+      { src: 'projects/talent-copilot/01-roles.jpg', alt: 'Talent Copilot iOS — open roles list' },
+      {
+        src: 'projects/talent-copilot/02-role-detail.jpg',
+        alt: 'Talent Copilot iOS — role detail and candidate pool',
+      },
+      {
+        src: 'projects/talent-copilot/03-ranked.jpg',
+        alt: 'Talent Copilot iOS — BM25 ranked matches with evidence',
+      },
+    ],
+  },
+  {
     title: 'FinTrack',
     tech: [
       'Flutter',
