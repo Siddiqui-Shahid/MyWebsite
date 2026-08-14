@@ -17,8 +17,7 @@ export function Services() {
           Services
         </h2>
         <p className="mt-3 max-w-2xl text-lg text-text-secondary">
-          iOS at scale, Flutter products, on-device AI, and full-stack shipping —
-          from arena apps to privacy-first tools.
+          iOS and Flutter — App Store apps at consumer scale, plus products I shipped end-to-end.
         </p>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

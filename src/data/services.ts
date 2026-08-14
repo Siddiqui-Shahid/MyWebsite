@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react'
-import { Brain, Gauge, Layers, Rocket, Smartphone, Sparkles } from 'lucide-react'
+import { Gauge, Layers, Rocket, Smartphone, Sparkles, Store } from 'lucide-react'
 
 export type Service = {
   title: string
@@ -17,31 +17,31 @@ export const services: Service[] = [
   {
     title: 'Flutter Development',
     description:
-      'Cross-platform apps with offline-first storage, biometric security, and store-ready polish.',
+      'Cross-platform apps with offline-first storage, biometric security, Firebase, and store-ready polish.',
     Icon: Layers,
   },
   {
-    title: 'On-Device AI',
+    title: 'App Store ownership',
     description:
-      'Privacy-first RAG, TFLite embeddings, Apple Intelligence, and Gemini Nano — with graceful fallbacks when models are unavailable.',
-    Icon: Brain,
+      'Feature → TestFlight → release. Crashlytics, Performance traces, deep links, and live-day reliability.',
+    Icon: Store,
   },
   {
-    title: 'Full-Stack Product Shipping',
+    title: 'Architecture',
     description:
-      'Solo end-to-end delivery: mobile + API + portal — from FinTrack to GymFlow with deliberate product scope.',
+      'MVVM and Clean Architecture that stay shippable — protocol-oriented Swift, feature-first Flutter, CMS-driven UI when it earns its keep.',
     Icon: Rocket,
   },
   {
-    title: 'Performance & Security',
+    title: 'Performance & security',
     description:
-      'Firebase traces, crash triage, networking modernization, and biometric auth for production trust.',
+      'Firebase traces, crash triage, URLSession + SSL pinning, and biometric auth for production trust.',
     Icon: Gauge,
   },
   {
-    title: 'AI-Assisted Development',
+    title: 'Fast delivery',
     description:
-      'Context Engineering with Cursor, Claude, and Copilot — faster iteration without sacrificing architecture or security.',
+      'Cursor, Claude, and Copilot as a speed boost — architecture and release judgment stay mine.',
     Icon: Sparkles,
   },
 ]

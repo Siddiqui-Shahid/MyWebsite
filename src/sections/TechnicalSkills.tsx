@@ -1,6 +1,6 @@
 import { Container } from '../components/ui/Container'
 import { Section } from '../components/ui/Section'
-import { aiDevelopmentIntro, atsKeywords, skillCategories } from '../data/skills'
+import { atsKeywords, shippingIntro, skillCategories } from '../data/skills'
 
 const sectionId = 'skills'
 const headingId = 'skills-heading'
@@ -16,16 +16,15 @@ export function TechnicalSkills() {
           Technical skills
         </h2>
         <p className="mt-3 max-w-2xl text-lg text-text-secondary">
-          iOS, Flutter, on-device AI, and the toolchain I use to ship production
-          apps and privacy-first products.
+          Native iOS and Flutter — the stack I use to ship production apps.
         </p>
 
         <div className="mt-8 rounded-2xl border border-border bg-background/80 p-6 shadow-sm md:p-8">
           <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
-            AI-driven development
+            How I ship
           </h3>
           <p className="mt-3 text-base leading-relaxed text-text-secondary">
-            {aiDevelopmentIntro}
+            {shippingIntro}
           </p>
         </div>
 

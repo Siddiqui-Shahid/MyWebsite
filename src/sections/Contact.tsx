@@ -7,7 +7,7 @@ import { resumeHref } from '../lib/publicUrl'
 const headingId = 'contact-heading'
 
 export function Contact() {
-  const mailto = `mailto:${site.email}`
+  const mailto = `mailto:${site.email}?subject=iOS%20/%20Flutter%20role`
   const resumeLink = resumeHref(site.resume.href)
 
   return (
@@ -41,6 +41,22 @@ export function Contact() {
             rel="noopener noreferrer"
           >
             {site.resume.label}
+          </Button>
+          <Button
+            href={site.linkedin}
+            variant="secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </Button>
+          <Button
+            href={site.github}
+            variant="secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
           </Button>
         </div>
       </Container>

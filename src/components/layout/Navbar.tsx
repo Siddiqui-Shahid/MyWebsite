@@ -60,6 +60,14 @@ export function Navbar() {
                 {site.resume.label}
               </a>
             </li>
+            <li>
+              <a
+                href="#contact"
+                className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-white shadow-sm transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                Hire me
+              </a>
+            </li>
           </ul>
         </nav>
 
@@ -101,6 +109,13 @@ export function Navbar() {
             onClick={() => setOpen(false)}
           >
             {site.resume.label}
+          </a>
+          <a
+            href="#contact"
+            className="rounded-lg px-3 py-3 text-base font-medium text-primary hover:bg-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            onClick={() => setOpen(false)}
+          >
+            Hire me
           </a>
         </Container>
       </div>

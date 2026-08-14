@@ -4,7 +4,7 @@ import { Section } from '../components/ui/Section'
 import { site } from '../data/site'
 
 export function NextProjectCTA() {
-  const mailto = `mailto:${site.email}?subject=Project%20inquiry`
+  const mailto = `mailto:${site.email}?subject=iOS%20/%20Flutter%20role`
 
   return (
     <Section id="cta" className="py-16 md:py-20">

@@ -16,8 +16,8 @@ export function Experience() {
           Experience
         </h2>
         <p className="mt-3 max-w-2xl text-lg text-text-secondary">
-          Teams I have shipped with — ownership, pragmatism, and attention to
-          production detail.
+          iOS at consumer scale, Flutter where the product needs cross-platform —
+          ownership from feature to App Store.
         </p>
 
         <ol className="relative mt-12 max-w-3xl border-l border-border pl-8 md:pl-10">

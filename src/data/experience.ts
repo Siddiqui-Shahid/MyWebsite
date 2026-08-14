@@ -15,9 +15,9 @@ export const experience: Role[] = [
     location: 'Gurugram',
     highlights: [
       'Delivered Free Parking billing flow and biometric (Face ID) ticket access via LocalAuthentication; on-call for production fixes.',
-      'Hotlist: updated discovery flows with Instagram Reels and AI-powered restaurant search.',
+      'Hotlist: updated discovery flows with Instagram Reels and restaurant search.',
       'Plays: court and venue booking for badminton, cricket, football, and more.',
-      'Context Engineering with Cursor and Claude for MVVM/Clean Architecture migrations and AI-assisted reviews.',
+      'MVVM / Clean Architecture migrations with zero-regression delivery.',
     ],
   },
   {
@@ -34,13 +34,13 @@ export const experience: Role[] = [
   },
   {
     company: 'Raw Engineering',
-    title: 'Software Consulting Intern → Associate Software Engineer (iOS)',
+    title: 'Associate Software Engineer (iOS + Flutter)',
     period: 'Jan 2023 – Oct 2024',
     location: 'Mumbai',
     highlights: [
-      'Built NBA/WNBA apps (Memphis Grizzlies, Miami Heat, Las Vegas Aces, Chicago Sky); shipped reusable Stories SDK adopted portfolio-wide.',
+      'Built NBA/WNBA iOS apps (Memphis Grizzlies, Miami Heat, Las Vegas Aces, Chicago Sky); shipped reusable Stories SDK adopted portfolio-wide.',
       'SwiftUI+UIKit interoperability, deep links, Mixpanel/Airship; led Xcode 15 migration with zero-regression QA checklist.',
-      'Evaluated Flutter for cross-platform delivery; MVVM, GCD, Combine, and Instruments-driven performance tuning.',
+      'Used Flutter for cross-platform delivery where the product needed it; MVVM, GCD, Combine, and Instruments-driven performance tuning.',
       'End-to-end ownership of 40+ live releases across 10+ NBA team apps.',
       'Recognized with the Best Performer Award for technical excellence and delivery.',
     ],

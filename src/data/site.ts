@@ -2,46 +2,41 @@
 export const site = {
   name: 'Shahid',
   email: 'teamworkwithshahid@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/shahidsiddiquiios/',
+  github: 'https://github.com/Siddiqui-Shahid',
   hero: {
-    headline:
-      'iOS & AI-native engineer — production apps and on-device intelligence',
+    availability: 'Available immediately · iOS & Flutter roles',
+    headline: 'iOS & Flutter engineer who ships production apps',
     subheadline:
-      '3.5+ years shipping at BookMyShow (30+ lakh DAU), District by Zomato, and NBA team apps — plus solo-built FinTrack, Volt, and GymFlow with on-device RAG, TFLite, and privacy-first architecture. Swift, Flutter, Clean Architecture, and AI-assisted delivery.',
-    photoAlt: 'Portrait of Shahid, iOS and AI-native mobile engineer',
-    /** Short labels for the hero visual — stacked cards */
-    stackCards: [
-      'iOS & SwiftUI',
-      'Flutter & On-device AI',
-      'RAG · TFLite · Privacy',
-    ] as const,
-    /** One-line proof points under the subhead */
+      '3.5+ years of native iOS (Swift, SwiftUI, UIKit) and Flutter. BookMyShow at 30+ lakh DAU, District by Zomato, and NBA / WNBA apps on the App Store — plus Flutter products (FinTrack, GymFlow) shipped end-to-end.',
+    photoAlt: 'Portrait of Shahid, iOS and Flutter engineer',
+    stackCards: ['iOS · SwiftUI · UIKit', 'Flutter · Dart', 'MVVM · Clean Architecture'] as const,
     stats: [
-      '30+ lakh DAU production scale',
-      'On-device AI — no cloud LLM for user data',
-      'Solo full-stack product shipping',
+      '30+ lakh DAU production iOS',
+      'App Store NBA / WNBA apps',
+      'Flutter products shipped',
     ] as const,
-    /** Companies / products — trust chips (subset of full TrustBar) */
     trustChips: [
       'BookMyShow',
       'District by Zomato',
+      'NBA / WNBA',
       'FinTrack',
-      'Volt',
       'GymFlow',
     ] as const,
   },
   about:
-    'I am an iOS and AI-native software engineer who ships production mobile at scale and builds privacy-first products end-to-end. At BookMyShow I owned revenue-critical surfaces for 30+ lakh daily users; at District by Zomato I delivered native flows with biometric security and AI-assisted architecture migrations. Solo, I built FinTrack — a Flutter expense app with BM25 RAG and Apple Intelligence / Gemini Nano coaching that never sends spending data to the cloud — Volt, an offline SwiftUI strength app with session builder and rest timer — and GymFlow, a full-stack gym ops platform with geofenced QR check-in and on-device MiniLM workout recommendations. I combine Swift, Flutter, Clean Architecture, and Context Engineering to move fast without compromising trust boundaries.',
+    'I am an iOS and Flutter engineer. At BookMyShow I owned revenue-critical iOS surfaces for 30+ lakh daily users (ads, event bottom sheet, backend-driven UI) while keeping 99.95%+ crash-free sessions. At District by Zomato I shipped native billing and booking flows. At Raw Engineering I delivered NBA / WNBA fan apps still on the App Store. In Flutter I built FinTrack — a privacy-first expense tracker with offline Hive storage and store-ready Crashlytics / Remote Config — and GymFlow, a gym-ops member app on a NestJS API. I use MVVM, Clean Architecture, and production habits (SSL pinning, deep links, TestFlight) so releases stay stable.',
   nextProject: {
-    title: 'Building something with mobile or on-device AI?',
+    title: 'Hiring an iOS or Flutter engineer?',
     subtext:
-      'From consumer scale to privacy-first Flutter products — architecture, ownership, and shipped releases.',
-    cta: 'Get in Touch',
+      'Available immediately. Production iOS at consumer scale, Flutter products shipped solo, and App Store ownership from feature to release.',
+    cta: 'Email me',
   },
   contact: {
     heading:
-      'Have an idea, role, or project? Reach out — I typically reply within a few snack breaks 😁',
+      'Open to iOS, Flutter, and mobile roles. Email me — I typically reply the same day.',
   },
-  /** PDF under `public/` — regenerate with `npm run resume` */
+  /** PDF under `public/` — rebuild from sibling repo `../resume` (see run.md there) */
   resume: {
     href: 'resume.pdf',
     label: 'Resume',

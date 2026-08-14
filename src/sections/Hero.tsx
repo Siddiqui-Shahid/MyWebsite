@@ -34,6 +34,9 @@ export function Hero() {
               />
 
               <div className="relative flex flex-col items-center gap-6">
+                <p className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-medium text-primary md:text-sm">
+                  {hero.availability}
+                </p>
                 <div className="relative">
                   <img
                     src={profilePhoto}
@@ -93,7 +96,7 @@ export function Hero() {
               View Work
             </Button>
             <Button href="#contact" variant="secondary">
-              Contact Me
+              Hire me
             </Button>
             <Button
               href={resumeLink}

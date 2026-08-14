@@ -1,10 +1,10 @@
 export const trustItems = [
   'BookMyShow',
   'District by Zomato',
+  'NBA / WNBA',
   'FinTrack',
-  'Volt',
   'GymFlow',
-  'On-device AI',
   'Swift / Flutter',
-  'Privacy-first',
+  'App Store',
+  '30+ lakh DAU',
 ] as const
