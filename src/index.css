@@ -5,16 +5,17 @@
     'Inter Variable', Inter, ui-sans-serif, system-ui, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
 
-  /* Dark-first palette (Apple-like) */
-  --color-primary: #0a84ff;
-  --color-background: #000000;
-  --color-muted: #1c1c1e;
-  --color-text-primary: #f5f5f7;
-  --color-text-secondary: #a1a1a6;
-  --color-border: #3a3a3c;
+  --color-primary: #4ea1ff;
+  --color-accent: #7ee0c8;
+  --color-background: #07080c;
+  --color-muted: #10131a;
+  --color-surface: #161a22;
+  --color-text-primary: #f3f5f9;
+  --color-text-secondary: #9aa3b5;
+  --color-border: rgb(255 255 255 / 0.09);
 
-  --shadow-soft: 0 1px 2px rgb(0 0 0 / 0.45), 0 8px 24px rgb(0 0 0 / 0.35);
-  --shadow-soft-hover: 0 2px 4px rgb(0 0 0 / 0.4), 0 12px 32px rgb(0 0 0 / 0.45);
+  --shadow-soft: 0 1px 2px rgb(0 0 0 / 0.4), 0 18px 40px rgb(0 0 0 / 0.35);
+  --shadow-glow: 0 0 0 1px rgb(78 161 255 / 0.18), 0 12px 40px rgb(78 161 255 / 0.16);
 }
 
 @layer base {
@@ -33,4 +34,33 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-primary) 40%, transparent);
+    color: #fff;
+  }
+
+  body::before {
+    content: '';
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 32s linear infinite;
+  width: max-content;
 }

@@ -8,6 +8,7 @@ export type Project = {
   tech: string[]
   bullets: string[]
   impact?: string
+  featured?: boolean
   /** App Store or external product link */
   href?: string
   linkLabel?: string
@@ -19,6 +20,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: 'BookMyShow',
+    featured: true,
     tech: ['Swift', 'SwiftUI', 'UIKit', 'MVVM', 'Backend-driven UI'],
     bullets: [
       'LE Bottom Sheet: End-to-end delivery for quick event overviews with cross-functional stakeholders and improved UI stability.',
@@ -75,6 +77,7 @@ export const projects: Project[] = [
   },
   {
     title: 'FinTrack',
+    featured: true,
     tech: ['Flutter', 'Dart', 'Hive', 'Provider', 'Firebase', 'Play Store'],
     bullets: [
       'Privacy-first expense tracker: offline Hive storage, biometric lock, insights charts, JSON backup.',

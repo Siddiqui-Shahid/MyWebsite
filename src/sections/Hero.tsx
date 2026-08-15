@@ -11,101 +11,88 @@ export function Hero() {
   const resumeLink = resumeHref(site.resume.href)
 
   return (
-    <Section id="top" className="relative scroll-mt-0 overflow-hidden pb-20 pt-14 md:pb-28 md:pt-20">
+    <Section id="top" className="relative scroll-mt-0 overflow-hidden pb-16 pt-10 md:pb-24 md:pt-16">
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-[min(52vh,520px)] bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,color-mix(in_oklab,var(--color-primary)_28%,transparent),transparent_65%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_15%_0%,color-mix(in_oklab,var(--color-primary)_22%,transparent),transparent_55%),radial-gradient(ellipse_50%_40%_at_90%_10%,color-mix(in_oklab,var(--color-accent)_12%,transparent),transparent_50%)]"
         aria-hidden
       />
 
       <Container className="relative">
-        <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-          <div className="relative w-full max-w-lg">
-            <div className="pointer-events-none absolute -left-16 top-1/2 size-56 -translate-y-1/2 rounded-full bg-primary/25 blur-3xl md:size-72" />
-            <div className="pointer-events-none absolute -right-12 bottom-0 size-48 rounded-full bg-primary/15 blur-3xl md:size-56" />
+        <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+          <div>
+            <p className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-xs font-medium text-primary md:text-sm">
+              <span className="size-1.5 rounded-full bg-accent shadow-[0_0_10px_var(--color-accent)]" aria-hidden />
+              {hero.availability}
+            </p>
 
-            <div className="relative overflow-hidden rounded-3xl border border-border bg-muted/40 p-8 shadow-[var(--shadow-soft)] md:p-10">
-              <div
-                className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,color-mix(in_oklab,var(--color-border)_55%,transparent)_1px,transparent_1px),linear-gradient(to_bottom,color-mix(in_oklab,var(--color-border)_55%,transparent)_1px,transparent_1px)] bg-[length:32px_32px] opacity-[0.65]"
-                aria-hidden
-              />
-              <div
-                className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,color-mix(in_oklab,var(--color-primary)_18%,transparent),transparent_55%)]"
-                aria-hidden
-              />
+            <h1 className="mt-6 max-w-xl text-pretty text-4xl font-semibold tracking-tight text-text-primary sm:text-5xl md:text-6xl md:leading-[1.05]">
+              <span className="bg-[linear-gradient(120deg,#f7fbff_20%,#4ea1ff_70%,#7ee0c8)] bg-clip-text text-transparent">
+                {hero.headline}
+              </span>
+              <span className="mt-2 block text-text-secondary">{hero.tagline}</span>
+            </h1>
 
-              <div className="relative flex flex-col items-center gap-6">
-                <p className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-medium text-primary md:text-sm">
-                  {hero.availability}
-                </p>
-                <div className="relative">
-                  <img
-                    src={profilePhoto}
-                    alt={hero.photoAlt}
-                    width={280}
-                    height={280}
-                    className="size-28 rounded-full object-cover shadow-[var(--shadow-soft)] ring-4 ring-primary/35 ring-offset-4 ring-offset-[color-mix(in_oklab,var(--color-muted)_85%,transparent)] md:size-36 md:ring-offset-[10px]"
-                    decoding="async"
-                  />
-                </div>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-text-secondary md:text-lg">
+              {hero.subheadline}
+            </p>
 
-                <ul className="flex flex-wrap items-center justify-center gap-2">
-                  {hero.stackCards.map((label) => (
-                    <li key={label}>
-                      <span className="inline-flex rounded-xl border border-border/90 bg-background/85 px-3 py-1.5 text-xs font-medium text-text-primary shadow-sm backdrop-blur-sm md:text-sm">
-                        {label}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <ul className="mt-8 grid max-w-lg grid-cols-3 gap-3">
+              {hero.stats.map((stat) => (
+                <li
+                  key={stat.label}
+                  className="rounded-2xl border border-border bg-white/3 px-3 py-4 text-center"
+                >
+                  <p className="text-xl font-semibold tracking-tight text-text-primary md:text-2xl">
+                    {stat.value}
+                  </p>
+                  <p className="mt-1 text-[0.7rem] uppercase tracking-wider text-text-secondary">
+                    {stat.label}
+                  </p>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Button href="#work" variant="primary">
+                View work
+              </Button>
+              <Button href="#contact" variant="secondary">
+                Hire me
+              </Button>
+              <Button
+                href={resumeLink}
+                variant="secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {site.resume.label}
+              </Button>
             </div>
           </div>
 
-          <h1 className="mt-12 max-w-4xl text-pretty text-4xl font-bold tracking-tight text-text-primary md:text-6xl md:leading-[1.08] lg:text-7xl">
-            {hero.headline}
-          </h1>
+          <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
+            <div className="pointer-events-none absolute -left-10 top-8 size-40 rounded-full bg-primary/25 blur-3xl md:size-56" />
+            <div className="pointer-events-none absolute -right-6 bottom-4 size-36 rounded-full bg-accent/20 blur-3xl" />
 
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary md:text-xl">
-            {hero.subheadline}
-          </p>
-
-          <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-text-secondary md:text-base">
-            {hero.stats.map((text) => (
-              <li key={text} className="flex items-center gap-2">
-                <span
-                  className="size-1.5 shrink-0 rounded-full bg-primary"
-                  aria-hidden
-                />
-                <span>{text}</span>
-              </li>
-            ))}
-          </ul>
-
-          <ul className="mt-8 flex flex-wrap items-center justify-center gap-2">
-            {hero.trustChips.map((name) => (
-              <li key={name}>
-                <span className="inline-block rounded-full border border-border bg-muted/70 px-4 py-2 text-sm text-text-secondary shadow-sm">
-                  {name}
-                </span>
-              </li>
-            ))}
-          </ul>
-
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <Button href="#work" variant="primary">
-              View Work
-            </Button>
-            <Button href="#contact" variant="secondary">
-              Hire me
-            </Button>
-            <Button
-              href={resumeLink}
-              variant="secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {site.resume.label}
-            </Button>
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-surface/70 p-6 shadow-[var(--shadow-soft)] backdrop-blur-md md:p-8">
+              <img
+                src={profilePhoto}
+                alt={hero.photoAlt}
+                width={480}
+                height={480}
+                className="aspect-square w-full rounded-[1.4rem] object-cover"
+                decoding="async"
+              />
+              <ul className="mt-5 flex flex-wrap gap-2">
+                {hero.stackCards.map((label) => (
+                  <li key={label}>
+                    <span className="inline-flex rounded-full border border-white/10 bg-background/70 px-3 py-1.5 text-xs font-medium text-text-primary">
+                      {label}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </Container>

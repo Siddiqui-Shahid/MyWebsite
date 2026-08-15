@@ -1,5 +1,6 @@
 import { Container } from '../components/ui/Container'
 import { Section } from '../components/ui/Section'
+import { SectionHeading } from '../components/ui/SectionHeading'
 import { lifecycleSteps } from '../data/lifecycle'
 
 const sectionId = 'process'
@@ -7,28 +8,27 @@ const headingId = 'lifecycle-heading'
 
 export function Lifecycle() {
   return (
-    <Section id={sectionId} labelledBy={headingId} className="bg-background">
+    <Section id={sectionId} labelledBy={headingId}>
       <Container>
-        <h2
+        <SectionHeading
           id={headingId}
-          className="text-3xl font-bold tracking-tight text-text-primary md:text-4xl"
-        >
-          Development lifecycle
-        </h2>
-        <p className="mt-3 max-w-2xl text-lg text-text-secondary">
-          A clear path from first sketch to something your users can rely on.
-        </p>
+          kicker="How I work"
+          title="From requirement to a release you can trust"
+        />
 
-        <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-3 xl:grid-cols-6">
-          {lifecycleSteps.map((step) => {
+        <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {lifecycleSteps.map((step, index) => {
             const { Icon } = step
             return (
-              <article
+              <li
                 key={step.title}
-                className="rounded-2xl border border-border bg-muted/60 p-6 shadow-sm transition-shadow duration-200 hover:shadow-md md:p-5 xl:p-6"
+                className="relative rounded-3xl border border-border bg-surface/70 p-6"
               >
+                <span className="text-[0.65rem] font-semibold tracking-[0.18em] text-primary">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
                 <div
-                  className="inline-flex size-11 items-center justify-center rounded-xl border border-border bg-background text-primary"
+                  className="mt-4 inline-flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary"
                   aria-hidden
                 >
                   <Icon className="size-5" strokeWidth={2} />
@@ -39,10 +39,10 @@ export function Lifecycle() {
                 <p className="mt-2 text-sm leading-relaxed text-text-secondary">
                   {step.description}
                 </p>
-              </article>
+              </li>
             )
           })}
-        </div>
+        </ol>
       </Container>
     </Section>
   )

@@ -1,5 +1,6 @@
 import { Container } from '../components/ui/Container'
 import { Section } from '../components/ui/Section'
+import { SectionHeading } from '../components/ui/SectionHeading'
 import { atsKeywords, shippingIntro, skillCategories } from '../data/skills'
 
 const sectionId = 'skills'
@@ -7,37 +8,28 @@ const headingId = 'skills-heading'
 
 export function TechnicalSkills() {
   return (
-    <Section id={sectionId} labelledBy={headingId} className="bg-muted/40">
+    <Section id={sectionId} labelledBy={headingId}>
       <Container>
-        <h2
+        <SectionHeading
           id={headingId}
-          className="text-3xl font-bold tracking-tight text-text-primary md:text-4xl"
-        >
-          Technical skills
-        </h2>
-        <p className="mt-3 max-w-2xl text-lg text-text-secondary">
-          Native iOS and Flutter — the stack I use to ship production apps.
-        </p>
+          kicker="Stack"
+          title="iOS and Flutter, production-first"
+          description={shippingIntro}
+        />
 
-        <div className="mt-8 rounded-2xl border border-border bg-background/80 p-6 shadow-sm md:p-8">
-          <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
-            How I ship
-          </h3>
-          <p className="mt-3 text-base leading-relaxed text-text-secondary">
-            {shippingIntro}
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2">
           {skillCategories.map((category) => (
-            <div key={category.title}>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-text-secondary">
+            <div
+              key={category.title}
+              className="rounded-3xl border border-border bg-surface/70 p-6"
+            >
+              <h3 className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-primary">
                 {category.title}
               </h3>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {category.items.map((item) => (
                   <li key={item}>
-                    <span className="inline-block rounded-full border border-border bg-muted/60 px-3 py-1.5 text-sm text-text-primary shadow-sm">
+                    <span className="inline-block rounded-full border border-white/8 bg-background/60 px-3 py-1.5 text-sm text-text-primary">
                       {item}
                     </span>
                   </li>
@@ -47,20 +39,15 @@ export function TechnicalSkills() {
           ))}
         </div>
 
-        <div className="mt-12">
-          <h3 className="text-sm font-semibold uppercase tracking-wider text-text-secondary">
-            Core keywords
-          </h3>
-          <ul className="mt-4 flex flex-wrap gap-2">
-            {atsKeywords.map((keyword) => (
-              <li key={keyword}>
-                <span className="inline-block rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-sm font-medium text-text-primary">
-                  {keyword}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="mt-8 flex flex-wrap gap-2">
+          {atsKeywords.map((keyword) => (
+            <li key={keyword}>
+              <span className="inline-block rounded-full border border-primary/20 bg-primary/8 px-3 py-1 text-xs font-medium text-text-secondary">
+                {keyword}
+              </span>
+            </li>
+          ))}
+        </ul>
       </Container>
     </Section>
   )

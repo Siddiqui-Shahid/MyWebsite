@@ -3,43 +3,82 @@ import { ExternalLink } from 'lucide-react'
 import { Card } from '../components/ui/Card'
 import { Container } from '../components/ui/Container'
 import { Section } from '../components/ui/Section'
+import { SectionHeading } from '../components/ui/SectionHeading'
+import { cn } from '../lib/cn'
 import { projects } from '../data/projects'
 import { publicAssetUrl } from '../lib/publicUrl'
 
 const sectionId = 'work'
 const headingId = 'work-heading'
 
+function Phone({
+  src,
+  alt,
+  className,
+}: {
+  src: string
+  alt: string
+  className?: string
+}) {
+  return (
+    <div
+      className={cn(
+        'overflow-hidden rounded-[1.35rem] border-[3px] border-white/18 bg-black p-1 shadow-[var(--shadow-soft)]',
+        className,
+      )}
+    >
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        decoding="async"
+        className="aspect-[9/19] w-full rounded-[1.05rem] object-cover object-top"
+      />
+    </div>
+  )
+}
+
 function ProjectDemoGallery({
   title,
   screenshots,
+  featured,
 }: {
   title: string
   screenshots: { src: string; alt: string }[]
+  featured?: boolean
 }) {
+  if (featured) {
+    const shots = screenshots.slice(0, 3)
+    return (
+      <div className="flex items-end justify-center gap-3 px-2 pb-2 pt-4 md:gap-4">
+        {shots.map((shot, i) => (
+          <Phone
+            key={shot.src}
+            src={publicAssetUrl(shot.src)}
+            alt={shot.alt}
+            className={cn(
+              'w-[30%] max-w-36',
+              i === 1 && 'w-[34%] max-w-40 -translate-y-3',
+            )}
+          />
+        ))}
+      </div>
+    )
+  }
+
   return (
-    <div className="-mx-6 -mt-6 mb-4 border-b border-border bg-muted/80">
-      <p className="px-4 pt-3 text-xs font-medium uppercase tracking-wide text-text-secondary">
-        App demo
+    <div className="-mx-6 -mt-6 mb-5 border-b border-border bg-black/25">
+      <p className="px-5 pt-4 text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-text-secondary">
+        {title} demo
       </p>
       <div
-        className="flex gap-3 overflow-x-auto overscroll-x-contain px-4 pb-4 pt-2 snap-x snap-mandatory [-webkit-overflow-scrolling:touch] [scrollbar-width:thin]"
+        className="flex gap-3 overflow-x-auto overscroll-x-contain px-5 pb-5 pt-3 snap-x snap-mandatory [-webkit-overflow-scrolling:touch] [scrollbar-width:thin]"
         role="region"
         aria-label={`${title} screenshots`}
       >
         {screenshots.map((shot) => (
-          <figure
-            key={shot.src}
-            className="w-[min(12rem,62vw)] shrink-0 snap-center sm:w-36 sm:snap-start"
-          >
-            <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm">
-              <img
-                src={publicAssetUrl(shot.src)}
-                alt={shot.alt}
-                loading="lazy"
-                decoding="async"
-                className="aspect-[9/16] w-full object-cover object-top"
-              />
-            </div>
+          <figure key={shot.src} className="w-[min(9.5rem,58vw)] shrink-0 snap-center">
+            <Phone src={publicAssetUrl(shot.src)} alt={shot.alt} />
           </figure>
         ))}
       </div>
@@ -49,73 +88,86 @@ function ProjectDemoGallery({
 
 export function Projects() {
   return (
-    <Section id={sectionId} labelledBy={headingId} className="bg-muted/40">
+    <Section id={sectionId} labelledBy={headingId}>
       <Container>
-        <h2
+        <SectionHeading
           id={headingId}
-          className="text-3xl font-bold tracking-tight text-text-primary md:text-4xl"
-        >
-          Projects
-        </h2>
-        <p className="mt-3 max-w-2xl text-lg text-text-secondary">
-          Production iOS at BookMyShow, District by Zomato, and NBA / WNBA team apps — plus
-          Flutter products (FinTrack, GymFlow) and SwiftUI work (Volt) I shipped myself.
-        </p>
+          kicker="Selected work"
+          title="Shipped on the App Store — and products I built myself"
+          description="Production iOS at BookMyShow, District, and NBA / WNBA apps. Flutter products with store-ready release hygiene."
+        />
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-2">
           {projects.map((project) => (
             <Card
               key={project.title}
-              className="flex min-w-0 flex-col overflow-hidden bg-muted/60"
+              className={cn(
+                'flex min-w-0 flex-col overflow-hidden bg-muted/50',
+                project.featured && 'md:col-span-2 md:grid md:grid-cols-2 md:gap-8',
+              )}
             >
               {project.screenshots?.length ? (
                 <ProjectDemoGallery
                   title={project.title}
                   screenshots={project.screenshots}
+                  featured={project.featured}
                 />
-              ) : project.imageSrc ? (
-                <div className="-mx-6 -mt-6 mb-4 aspect-video overflow-hidden border-b border-border bg-muted">
-                  <img
-                    src={publicAssetUrl(project.imageSrc)}
-                    alt=""
-                    className="h-full w-full object-cover"
-                  />
+              ) : project.featured ? (
+                <div className="flex min-h-52 items-center justify-center rounded-2xl bg-[radial-gradient(ellipse_at_center,color-mix(in_oklab,var(--color-primary)_18%,transparent),transparent_70%)] md:min-h-full">
+                  <p className="text-6xl font-semibold tracking-tight text-primary/80 md:text-7xl">
+                    30L+
+                  </p>
                 </div>
               ) : null}
-              <h3 className="text-lg font-semibold text-pretty text-text-primary">
-                {project.title}
-              </h3>
-              <ul className="mt-2 flex flex-wrap gap-1.5">
-                {project.tech.map((tag) => (
-                  <li
-                    key={tag}
-                    className="rounded-md border border-border bg-background/70 px-2 py-0.5 text-xs text-text-secondary"
-                  >
-                    {tag}
-                  </li>
-                ))}
-              </ul>
-              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-text-secondary">
-                {project.bullets.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              {project.impact ? (
-                <p className="mt-4 text-sm font-medium text-pretty text-text-primary">
-                  Impact: {project.impact}
-                </p>
-              ) : null}
-              {project.href ? (
-                <a
-                  href={project.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+
+              <div className={cn(project.featured && project.screenshots ? 'md:py-4' : '')}>
+                {project.featured ? (
+                  <p className="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-primary">
+                    Featured
+                  </p>
+                ) : null}
+                <h3
+                  className={cn(
+                    'text-pretty font-semibold text-text-primary',
+                    project.featured ? 'mt-2 text-2xl md:text-3xl' : 'text-lg',
+                  )}
                 >
-                  {project.linkLabel ?? 'Learn more'}
-                  <ExternalLink className="size-4" aria-hidden />
-                </a>
-              ) : null}
+                  {project.title}
+                </h3>
+                <ul className="mt-3 flex flex-wrap gap-1.5">
+                  {project.tech.slice(0, 5).map((tag) => (
+                    <li
+                      key={tag}
+                      className="rounded-full border border-white/8 bg-background/50 px-2.5 py-0.5 text-[0.7rem] text-text-secondary"
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+                <ul className="mt-4 space-y-2 text-sm leading-relaxed text-text-secondary">
+                  {project.bullets.slice(0, project.featured ? 3 : 2).map((item) => (
+                    <li key={item} className="border-l border-primary/30 pl-3">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                {project.impact ? (
+                  <p className="mt-4 text-sm font-medium text-pretty text-text-primary">
+                    {project.impact}
+                  </p>
+                ) : null}
+                {project.href ? (
+                  <a
+                    href={project.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  >
+                    {project.linkLabel ?? 'Learn more'}
+                    <ExternalLink className="size-3.5" aria-hidden />
+                  </a>
+                ) : null}
+              </div>
             </Card>
           ))}
         </div>

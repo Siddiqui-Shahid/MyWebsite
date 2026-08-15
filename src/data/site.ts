@@ -6,15 +6,16 @@ export const site = {
   github: 'https://github.com/Siddiqui-Shahid',
   hero: {
     availability: 'Available immediately · iOS & Flutter roles',
-    headline: 'iOS & Flutter engineer who ships production apps',
+    headline: 'iOS & Flutter engineer',
+    tagline: 'who ships production apps',
     subheadline:
-      '3.5+ years of native iOS (Swift, SwiftUI, UIKit) and Flutter. BookMyShow at 30+ lakh DAU, District by Zomato, and NBA / WNBA apps on the App Store — plus Flutter products (FinTrack, GymFlow) shipped end-to-end.',
+      '3.5+ years of native iOS (Swift, SwiftUI, UIKit) and Flutter. BookMyShow at 30+ lakh DAU, District by Zomato, and NBA / WNBA apps on the App Store — plus Flutter products shipped end-to-end.',
     photoAlt: 'Portrait of Shahid, iOS and Flutter engineer',
     stackCards: ['iOS · SwiftUI · UIKit', 'Flutter · Dart', 'MVVM · Clean Architecture'] as const,
     stats: [
-      '30+ lakh DAU production iOS',
-      'App Store NBA / WNBA apps',
-      'Flutter products shipped',
+      { value: '30L+', label: 'DAU on iOS' },
+      { value: '99.95%', label: 'crash-free' },
+      { value: '3.5+', label: 'years shipping' },
     ] as const,
     trustChips: [
       'BookMyShow',

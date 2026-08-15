@@ -8,9 +8,8 @@ import { Container } from '../ui/Container'
 
 const navLinks = [
   { href: '#work', label: 'Work' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#services', label: 'Services' },
   { href: '#experience', label: 'Experience' },
+  { href: '#skills', label: 'Skills' },
   { href: '#contact', label: 'Contact' },
 ] as const
 
@@ -29,22 +28,25 @@ export function Navbar() {
   }, [open])
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/80 bg-background/80 backdrop-blur-md">
-      <Container className="flex h-16 items-center justify-between gap-4">
+    <header className="sticky top-0 z-50 border-b border-white/8 bg-background/70 backdrop-blur-xl">
+      <Container className="flex h-[4.25rem] items-center justify-between gap-4">
         <a
           href="#top"
-          className="text-lg font-semibold tracking-tight text-text-primary transition-opacity hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="flex items-center gap-2.5 text-text-primary transition-opacity hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          Shahid
+          <span className="grid size-8 place-items-center rounded-lg bg-primary/15 text-[0.7rem] font-bold tracking-wide text-primary">
+            SS
+          </span>
+          <span className="text-[0.95rem] font-semibold tracking-tight">{site.name}</span>
         </a>
 
         <nav aria-label="Primary" className="hidden md:block">
-          <ul className="flex items-center gap-10">
+          <ul className="flex items-center gap-8">
             {navLinks.map(({ href, label }) => (
               <li key={href}>
                 <a
                   href={href}
-                  className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  className="text-sm text-text-secondary transition-colors hover:text-text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   {label}
                 </a>
@@ -55,7 +57,7 @@ export function Navbar() {
                 href={resumeLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="text-sm text-text-secondary transition-colors hover:text-text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 {site.resume.label}
               </a>
@@ -63,7 +65,7 @@ export function Navbar() {
             <li>
               <a
                 href="#contact"
-                className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-white shadow-sm transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-[#061018] shadow-[var(--shadow-glow)] transition-transform hover:scale-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 Hire me
               </a>
@@ -86,7 +88,7 @@ export function Navbar() {
       <div
         id="mobile-nav"
         className={cn(
-          'border-t border-border bg-background md:hidden',
+          'border-t border-border bg-background/95 md:hidden',
           open ? 'block' : 'hidden',
         )}
       >

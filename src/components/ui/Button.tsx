@@ -6,9 +6,9 @@ type Variant = 'primary' | 'secondary'
 
 const variants: Record<Variant, string> = {
   primary:
-    'bg-primary text-white shadow-sm hover:bg-primary/90 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary',
+    'bg-primary text-[#061018] shadow-[var(--shadow-glow)] hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary',
   secondary:
-    'border border-border bg-background text-text-primary shadow-sm hover:border-primary/40 hover:bg-muted/80 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary',
+    'border border-white/12 bg-white/4 text-text-primary backdrop-blur-sm hover:border-primary/40 hover:bg-white/8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary',
 }
 
 type ButtonProps = {
@@ -27,7 +27,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const classes = cn(
-    'inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-medium transition-[box-shadow,background-color,border-color] duration-200',
+    'inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold tracking-tight transition-[box-shadow,background-color,border-color,transform] duration-200 hover:scale-[1.02]',
     variants[variant],
     className,
   )

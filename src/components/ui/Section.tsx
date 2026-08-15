@@ -19,7 +19,7 @@ export function Section({
     <section
       id={id}
       aria-labelledby={labelledBy}
-      className={cn('scroll-mt-24 py-20', className)}
+      className={cn('scroll-mt-24 py-24 md:py-28', className)}
       {...props}
     >
       {children}
